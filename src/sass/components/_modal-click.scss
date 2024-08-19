@@ -1,0 +1,185 @@
+@use "../tools/px-to-rem" as p2r;
+@use "../tools/respond-to" as rt;
+
+.modal-click-parent {
+  position: relative;
+  max-inline-size: unset;
+
+  &:not(.lightbox-active) {
+    .modal-click,
+    .modal-click--info {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .modal-click {
+      display: inline-block;
+    }
+  }
+}
+
+.modal-click {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+}
+
+.modal-click--button {
+  position: absolute;
+  top: var(--size-1);
+  right: var(--size-1);
+  --button-mask-image: url("/static/images/modal-button.svg");
+}
+
+.modal-click--button-info {
+  position: relative;
+  --button-mask-image: url("/static/images/modal-info.svg");
+  z-index: 999;
+}
+
+.modal-click--info {
+  position: relative;
+  z-index: 999;
+  display: inline-block;
+  height: var(--size-7);
+  width: var(--size-7);
+}
+
+.modal-click--button,
+.modal-click--button-info {
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-midnight-blue);
+  transition: none;
+  box-shadow: none;
+  text-shadow: none;
+  height: var(--size-7);
+  width: var(--size-7);
+  padding: 0;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: ' ';
+    background-color: var(--color-ivory);
+    mask-image: var(--button-mask-image);
+    mask-size:  auto var(--size-4);
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+}
+
+.modal-click--button-info {
+  &:hover {
+    background-color: var(--color-midnight-blue-dark);
+  }
+}
+
+.lightbox-active {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "control"
+    "content"
+  ;
+  grid-template-rows: var(--size-9) auto;
+  background-color: var(--color-jet-black-lighter);
+
+  .modal-click-nav {
+    width: 100vw;
+    padding: var(--size-2) var(--size-3);
+    margin: auto;
+    grid-area: control;
+    position: relative;
+    display: grid;
+    gap: var(--size-3);
+    justify-content: end;
+    align-items: center;
+    grid-auto-flow: column;
+    grid-template-areas: "info closer";
+    grid-template-columns: var(--size-7) var(--size-7);
+    background-color: var(--color-jet-black);
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-color: var(--color-ivory-darker);
+  }
+
+  .modal-click {
+    display: inline-block;
+    position: relative;
+    grid-area: closer;
+  }
+
+  .modal-click-info {
+    display: inline-block;
+    grid-area: info;
+  }
+
+
+  &:not(.portfolio-item-has-caption) {
+    .modal-click--info {
+      display: none;
+    }
+  }
+
+  .modal-click--button {
+    position: relative;
+    top: 0;
+    right: 0;
+    --button-mask-image: url("/static/images/modal-close.svg");
+  }
+
+
+  .modal-picture {
+    grid-area: content;
+  }
+}
+
+.modal-hide-caption {
+  .modal-picture-caption {
+    display: none;
+  }
+
+  .modal-click--button-info {
+    background-color: var(--color-jet-black-lighter);
+
+    &:hover {
+      background-color: var(--color-midnight-blue);
+    }
+  }
+}
+
+@include rt.respond-to('large') {
+  .lightbox-active {
+    grid-auto-flow: column;
+    grid-template-areas: "content control";
+    grid-template-columns: auto var(--size-9);
+    grid-template-rows: unset;
+
+    .modal-click-nav {
+      width: 100%;
+      height: 100vh;
+      padding-block-start: var(--size-4);
+      border-bottom-color: unset;
+      border-left-color: var(--color-ivory-darker);
+      grid-auto-flow: row;
+      grid-template-areas:
+        "closer"
+        "info"
+      ;
+      grid-template-rows: var(--size-7) var(--size-7);
+      grid-template-columns: unset;
+      justify-content: center;
+    }
+
+  }
+}

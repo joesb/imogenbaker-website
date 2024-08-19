@@ -1,0 +1,34 @@
+@use "sass:color";
+// Fonts
+$primary-font: "Raleway", var(--font-sans);
+$secondary-font: "Raleway", var(--font-sans);
+$headings-font: "Bebas Neue", var(--font-sans);
+$handwriting-font: "Great Vibes", casual, cursive;
+
+// Font weight
+$base-font-weight-bold: 600;
+$base-font-weight-regular: 300;
+$base-font-weight-medium: 500;
+$headings-font-weight: 400;
+$handwriting-font-weight: 400;
+
+// Colors
+$color-chili-pepper: #DF362D;
+$color-jet-black: #1A1A1D;
+$color-ivory: #D3D3CB;
+$color-midnight-blue: #0D698B;
+
+$color-jet-black-light: color.adjust($color-jet-black, $lightness: 5%);
+$color-jet-black-lighter: color.adjust($color-jet-black, $lightness: 15%);
+$color-ivory-darkish: color.adjust($color-ivory, $lightness: -5%);
+$color-ivory-dark: color.adjust($color-ivory, $lightness: -10%);
+$color-ivory-darker: color.adjust($color-ivory, $lightness: -15%);
+$color-midnight-blue-dark: color.adjust($color-midnight-blue, $lightness: -10%);
+
+// Custom media queries
+$break-very-small: 22.5rem; // >= 360px @ 16px
+$break-small: 30rem; // >= 480px @ 16px
+$break-medium: 48rem; // >= 768px @ 16px
+$break-large: 64rem; // >= 1024px @ 16px
+$break-extra-large: 90rem; // >= 1440px @ 16px
+$break-largest: 120rem; // >= 1920px @ 16px

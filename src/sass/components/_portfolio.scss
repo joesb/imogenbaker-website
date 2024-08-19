@@ -1,0 +1,124 @@
+@use "../tools/respond-to" as rt;
+
+.portfolio-list {
+  display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+  gap: var(--size-4);
+}
+
+.portfolio-list-item {
+  background-color: var(--color-ivory);
+
+  &.portfolio-list-item--border {
+    border: 1px solid var(--color-ivory-darkish);
+  }
+
+  &.lightbox-active {
+    background-color: var(--color-jet-black-light);
+  }
+}
+
+.portfolio-item--figure {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "picture"
+    "caption"
+  ;
+
+  &:not(:has(.portfolio-item--caption)) {
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "picture"
+    ;
+  }
+}
+.lightbox-active {
+  &.portfolio-list-item--border {
+    border-width: 0;
+  }
+
+  .portfolio-item--figure {
+    grid-template-rows: 4fr 1fr;
+  }
+}
+
+.modal-hide-caption {
+  .portfolio-item--figure {
+    grid-template-rows: auto;
+    grid-template-areas:
+      "picture"
+    ;
+    gap: unset;
+  }
+}
+
+.portfolio-item--picture {
+  grid-area: picture;
+  max-block-size: 100%;
+}
+
+.portfolio-item--caption {
+  grid-area: caption;
+
+  .figcaption {
+    max-inline-size: 100%;
+    line-height: var(--font-lineheight-2);
+    display: grid;
+    grid-auto-flow: row;
+    gap: var(--size-2);
+    padding: var(--size-4);
+  }
+
+  .caption-media,
+  .caption-date,
+  .caption-reference {
+    font-style: italic;
+    font-size: smaller;
+  }
+
+  .caption-label {
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+.lightbox-active {
+  .portfolio-item--figure {
+    height: 100vh;
+  }
+
+  .portfolio-item--caption {
+    color: var(--color-ivory);
+  }
+}
+
+@include rt.respond-to('large') {
+  .portfolio-item--figure {
+    grid-auto-flow: column;
+    grid-template-rows: unset;
+    grid-template-columns: minmax(60%, 4fr) minmax(0, 1fr);
+    grid-template-areas: "picture caption";
+    align-content: center;
+
+    &:not(:has(.portfolio-item--caption)) {
+      grid-template-columns: auto;
+      grid-template-areas: "picture";
+    }
+  }
+
+  .lightbox-active {
+    .portfolio-item--figure {
+      grid-template-rows: unset;
+    }
+  }
+
+  .modal-hide-caption {
+    .portfolio-item--figure {
+      grid-template-rows: unset;
+      grid-template-columns: auto;
+      grid-template-areas: "picture";
+      gap: unset;
+    }
+  }
+}
