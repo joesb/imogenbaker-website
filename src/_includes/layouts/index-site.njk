@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+
+{# Title bar #}
+<div class="content-canvas">
+  {% include "layouts/components/title-bar.njk" %}
+</div>
+
+{# Main page content #}
+<div class="content-canvas">
+  {{ content | safe }}
+
+  {% if image %}
+    {% figure "portfolio-item--figure content-canvas-item-full" %}
+      {% image image.path, image.alt, 'portfolio-item--image image-obj-contain image-max-height-100vh','portfolio-item--picture' %}
+    {% endfigure %}
+  {% endif %}
+
+</div>

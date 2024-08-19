@@ -1,6 +1,9 @@
 ---
-layout: index.njk
+layout: index-site.njk
 title: Hello world
+image:
+  path: "static/images/ps-ijb-001.jpeg"
+  alt: "Imogen Baker"
 ---
 
 ## Hello world
