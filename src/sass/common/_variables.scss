@@ -20,6 +20,7 @@ $color-midnight-blue: #0D698B;
 
 $color-jet-black-light: color.adjust($color-jet-black, $lightness: 5%);
 $color-jet-black-lighter: color.adjust($color-jet-black, $lightness: 15%);
+$color-jet-black-alpha-75: rgba(26, 26, 29, 0.75);
 $color-ivory-darkish: color.adjust($color-ivory, $lightness: -5%);
 $color-ivory-dark: color.adjust($color-ivory, $lightness: -10%);
 $color-ivory-darker: color.adjust($color-ivory, $lightness: -15%);

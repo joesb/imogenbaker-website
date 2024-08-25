@@ -7,14 +7,15 @@ layout: base.njk
   {% include "layouts/components/title-bar.njk" %}
 </div>
 
+{% if image %}
+<div class="index-site--image-main content-canvas">
+  {% figure "index-site--image-main--figure content-canvas-item-full" %}
+    {% image image.path, image.alt, 'index-site--image-main--image image-obj-cover image-max-height-100vh','index-site--image-main--picture' %}
+  {% endfigure %}
+</div>
+{% endif %}
+
 {# Main page content #}
 <div class="content-canvas">
   {{ content | safe }}
-
-  {% if image %}
-    {% figure "portfolio-item--figure content-canvas-item-full" %}
-      {% image image.path, image.alt, 'portfolio-item--image image-obj-contain image-max-height-100vh','portfolio-item--picture' %}
-    {% endfigure %}
-  {% endif %}
-
 </div>

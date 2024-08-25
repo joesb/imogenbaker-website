@@ -24,6 +24,7 @@ ELEMENTS
     --color-jet-black: #{var.$color-jet-black};
     --color-jet-black-light: #{var.$color-jet-black-light};
     --color-jet-black-lighter: #{var.$color-jet-black-lighter};
+    --color-jet-black-alpha-75: #{var.$color-jet-black-alpha-75};
     --color-ivory: #{var.$color-ivory};
     --color-ivory-dark: #{var.$color-ivory-dark};
     --color-ivory-darkish: #{var.$color-ivory-darkish};
@@ -33,6 +34,8 @@ ELEMENTS
 
     --color-text: var(--color-jet-black);
     --color-text-lighter: var(--color-jet-black-lighter);
+    --color-text-white: var(--color-ivory);
+    --color-text-white-dark: var(--color-ivory-dark);
 
     --color-background: var(--color-ivory);
     --color-background-dark: var(--color-ivory-dark);

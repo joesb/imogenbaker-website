@@ -1,7 +1,6 @@
 @use "../tools/respond-to" as rt;
 
 .header-main__inner {
-  position: relative;
   display: grid;
   grid-template-columns:
     [full-start]

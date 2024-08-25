@@ -13,10 +13,9 @@
   height: 100vh;
   width: 100%;
   top: 0;
-  left: 0;
+  // left: 0;
   z-index: 2;
   padding: p2r.px-to-rem(145px) p2r.px-to-rem(25px) p2r.px-to-rem(25px) p2r.px-to-rem(25px);
-  background-color: var(--color-background);
 }
 
 .open-mobile {

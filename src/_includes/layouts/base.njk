@@ -3,7 +3,7 @@
 
   {% include "layouts/components/head.njk" %}
 
-  <body>
+  <body {% if body.classes %} class="{{ body.classes  | join(" ") }}"{% endif %}>
 
     {# Header #}
     {% include "layouts/components/site-header.njk" %}

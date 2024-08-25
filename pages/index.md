@@ -1,6 +1,9 @@
 ---
 layout: index-site.njk
 title: Hello world
+body:
+  classes:
+    - "index-site"
 image:
   path: "static/images/ps-ijb-001.jpeg"
   alt: "Imogen Baker"

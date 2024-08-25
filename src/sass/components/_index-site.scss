@@ -1,0 +1,67 @@
+@use "../tools/px-to-rem" as p2r;
+@use "../tools/respond-to" as rt;
+
+.index-site {
+  .site-logo--title {
+    color: var(--color-text-white);
+  }
+
+  .main-nav--list--item-link {
+    color: var(--color-text-white);
+
+    &:hover {
+      color: var(--color-text-white-dark);
+    }
+  }
+
+  .header-main {
+    height: 40vh;
+  }
+
+  .header-main__nav {
+    padding-block-start: 0;
+    background-color: var(--color-jet-black-alpha-75);
+  }
+
+  .main-nav {
+    margin-top: 30vh;
+  }
+
+  .header-main__menu {
+    .open-text {
+      color: var(--color-text-white);
+    }
+
+    .header-main__menu__burger,
+    &.js-closed .header-main__menu__burger {
+      div {
+        background-color: var(--color-text-white);
+      }
+    }
+  }
+
+  .main {
+    margin-top: 60vh;
+  }
+}
+
+
+.index-site--image-main--image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: unset;
+  height: 100vh;
+  width: 100vw;
+}
+
+@include rt.respond-to('medium') {
+  .index-site {
+    .header-main__nav {
+      background-color: unset;
+    }
+    .main-nav {
+      margin-top: unset;
+    }   
+  } 
+}
