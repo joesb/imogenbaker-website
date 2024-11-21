@@ -1,16 +1,19 @@
-const CleanCSS = require('clean-css');
-const UglifyJS = require('uglify-js');
-const autoprefixer = require('autoprefixer');
-const postCSS = require('postcss');
-const postCSSDC = require('postcss-discard-comments');
-const markdownIt = require("markdown-it");
-const markdownItAttrs = require('markdown-it-attrs');
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const Image = require("@11ty/eleventy-img");
+import CleanCSS from "clean-css";
+import UglifyJS from "uglify-js";
+import autoprefixer from "autoprefixer";
+import postCSS from "postcss";
+import postCSSDC from "postcss-discard-comments";
+import markdownIt from "markdown-it";
+import markdownItAttrs from "markdown-it-attrs";
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import Image from "@11ty/eleventy-img";
+import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
 
-module.exports = function (eleventyConfig) {
+/** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
+export default async function(eleventyConfig) {
   // 11ty plugins
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
 
   // Minify CSS
   eleventyConfig.addFilter('cssmin', function (code) {
@@ -68,7 +71,7 @@ module.exports = function (eleventyConfig) {
 				return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`;
 			}).join("\n")}
 				<img
-					src="${lowsrc.url}"
+					src="${highsrc.url}"
 					width="${highsrc.width}"
 					height="${highsrc.height}"
           class="${cls}"
@@ -158,25 +161,26 @@ module.exports = function (eleventyConfig) {
     return markdownLibrary.render(content);
   });
 
-  return {
-    templateFormats: ['md', 'njk', 'html', 'liquid'],
+};
 
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about it.
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for URLs (it does not affect your file structure)
-    pathPrefix: '/',
+export const config = {
+  templateFormats: ['md', 'njk', 'html', 'liquid'],
 
-    markdownTemplateEngine: 'liquid',
-    htmlTemplateEngine: 'njk',
-    dataTemplateEngine: 'njk',
-    passthroughFileCopy: true,
-    dir: {
-      input: 'pages',
-      includes: '../src/_includes',
-      layouts: '../src/_includes/layouts',
-      data: '../src/_data',
-      output: '_site',
-    },
-  };
-}
+  // If your site lives in a different subdirectory, change this.
+  // Leading or trailing slashes are all normalized away, so don’t worry about it.
+  // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
+  // This is only used for URLs (it does not affect your file structure)
+  pathPrefix: '/',
+
+  markdownTemplateEngine: 'liquid',
+  htmlTemplateEngine: 'njk',
+  dataTemplateEngine: 'njk',
+  passthroughFileCopy: true,
+  dir: {
+    input: 'pages',
+    includes: '../src/_includes',
+    layouts: '../src/_includes/layouts',
+    data: '../src/_data',
+    output: '_site',
+  }
+};

@@ -11,4 +11,4 @@ I'm online.
 
 You can find me at:
 
-- [Instagram](https://www.instagram.com/imogenjoybaker/)
+- [Instagram](https://www.instagram.com/ib_equine_coaching/)

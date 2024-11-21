@@ -51,6 +51,8 @@ ELEMENTS
     --font-weight-bold: #{var.$base-font-weight-bold};
     --font-weight-headings: #{var.$headings-font-weight};
     --font-weight-handwriting: #{var.$handwriting-font-weight};
+
+    --font-size-fluid-4: clamp(3rem, 12vw, 4.5rem);
   }
   
   html {
