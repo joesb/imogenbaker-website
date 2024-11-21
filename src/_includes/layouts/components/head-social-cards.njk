@@ -1,9 +1,8 @@
 {% set cardType %}summary_large_image{% endset %}
 
 {% set absoluteUrl %}{{ page.url | url | absoluteUrl(env.baseUrl) }}{% endset %}
-
-{% if permalink == '/' %}
-{% set cardTitle %}{{ meta.title }} — {{ meta.alt_title }}{% endset %}
+{% if page.url == '/' %}
+{% set cardTitle %}{{ meta.title }}, {{ meta.subtitle }}{% endset %}
 {% set ogType %}website{% endset %}
 {% else %}
 {% set cardTitle %}{{ title }} | {{ meta.title }}{% endset %}
