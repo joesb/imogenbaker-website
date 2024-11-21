@@ -6,12 +6,14 @@ import postCSSDC from "postcss-discard-comments";
 import markdownIt from "markdown-it";
 import markdownItAttrs from "markdown-it-attrs";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 import Image from "@11ty/eleventy-img";
 import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
   // 11ty plugins
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
 
@@ -86,6 +88,22 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addPairedShortcode("caption", function(caption, classes = '') {
     return `<figcaption class="figcaption ${classes}">` + caption + '</figcaption>'});
+
+
+  eleventyConfig.addAsyncShortcode("imageData", async function(src) {
+    var picture = await getPictureData(src, [800]);
+    return picture.jpeg[0].outputPath;
+  });
+
+  async function getPictureData(src, widths = [300, 600, 1000, 1980]) {
+    let metadata = await Image(src, {
+			widths: widths,
+			formats: ['jpeg'],
+      urlPath: "/static/img/",
+      outputDir: "./static/img/"
+		});
+    return metadata;
+  };
 
   // Sort portfolio pieces by date
   eleventyConfig.addCollection('portfolio', (collection) => {

@@ -21,3 +21,4 @@ src/_includes/assets/**/*.css.map
 static/img/
 
 .DS_Store
+.env
