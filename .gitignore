@@ -10,9 +10,6 @@ _site
 # 11ty cache
 .cache/
 
-# Local environment file
-.env
-
 # no need to include CSS files that get built
 src/_includes/assets/**/*.css
 src/_includes/assets/**/*.css.map
@@ -22,3 +19,12 @@ static/img/
 
 .DS_Store
 .env
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
