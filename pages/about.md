@@ -4,7 +4,7 @@ title: About Me
 eleventyNavigation:
   key: About
   title: Me
-  order: 20
+  order: 90
 ---
 
 I'm online.
