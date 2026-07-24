@@ -1,6 +1,8 @@
 ---
 layout: index.njk
 title: Equine Physiotherapy
+jumbotron: |
+  Offering a range of techniques and electrotherapies to support injury rehabilitation, or sports performance.
 eleventyNavigation:
   key: Equine
   title: Equine Physiotherapy

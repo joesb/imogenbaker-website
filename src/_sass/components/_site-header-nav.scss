@@ -25,14 +25,36 @@
 }
 
 .main-nav--list--item-link {
+  font-weight: inherit;
+
   &:hover {
     color: var(--text-1);
     text-decoration-line: underline;
   }
+}
+
+.main-nav--list--sublist {
+  @include mixins.do-not-display;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.main-nav--list--item {
+  position: relative;
+  overflow: visible;
+  width: max-content;
 
   &.current {
     font-weight: var(--font-weight-bold);
-    text-decoration-line: underline;
+  }
+  
+  &:hover,
+  &:focus-within {
+    > .main-nav--list--sublist {
+      @include mixins.do-display;
+      white-space: nowrap;
+    }
   }
 }
 
@@ -58,6 +80,18 @@
 
     &:not(:last-child) {
       border-right: 1px solid var(--color-text);
+    }
+  }
+
+  .main-nav--list--sublist {
+
+    .main-nav--list--item {
+      border-right: 0;
+      background-color: var(--color-background);
+  
+      &.current {
+        background-color: var(--color-background-dark);
+      }
     }
   }
 }

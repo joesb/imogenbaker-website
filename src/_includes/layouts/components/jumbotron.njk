@@ -1,0 +1,7 @@
+<div class="jumbotron">
+  <div class="jumbotron__content">
+    {% if jumbotron %}
+      {{ jumbotron | markdown | safe }}
+    {% endif %}
+  </div>
+</div>

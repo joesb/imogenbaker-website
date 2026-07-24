@@ -3,10 +3,10 @@
 
     {% set navPages = collections.all | eleventyNavigation %}
     {% macro renderNavListItem(entry) %}
-    <li class="main-nav--list--item">
-      <a href="{{ entry.url }}" class="main-nav--list--item-link{% activepath entry.url, page.url, 'current', ' ' %}">{{ entry.title }}</a>
+    <li class="main-nav--list--item{% activepath entry.url, page.url, 'current', ' ' %}">
+      <a href="{{ entry.url }}" class="main-nav--list--item-link">{{ entry.title }}</a>
     {% if entry.children.length %}
-      <ul>
+      <ul class="main-nav--list--sublist">
         {% for child in entry.children %}{{ renderNavListItem(child) }}{% endfor %}
       </ul>
     {% endif %}

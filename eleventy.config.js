@@ -163,7 +163,7 @@ export default async function(eleventyConfig) {
   }
 
   eleventyConfig.addPassthroughCopy('static/');
-  eleventyConfig.addWatchTarget('./src/sass/');
+  eleventyConfig.addWatchTarget('./src/_sass/');
   eleventyConfig.addPassthroughCopy('robots.txt');
   eleventyConfig.addPassthroughCopy('CNAME');
 
@@ -177,6 +177,10 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addFilter("markdown", (content) => {
     return markdownLibrary.render(content);
+  });
+
+  eleventyConfig.addPairedShortcode("Markdown", function(content, ril = false) {
+    return ril ? markdownLibrary.renderInline(content) : markdownLibrary.render(content);
   });
 
 };

@@ -1,0 +1,9 @@
+.jumbotron {
+  margin-block: var(--size-4);
+  font-size: larger;
+  font-weight: var(--font-weight-medium);
+
+  * {
+    font-weight: inherit;
+  }
+}
