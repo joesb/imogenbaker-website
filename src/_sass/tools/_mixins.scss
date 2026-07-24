@@ -20,6 +20,10 @@
   display: none;
 }
 
+@mixin do-display {
+  display: block;
+}
+
 @mixin no-spacing {
   margin: 0;
   padding: 0;

@@ -17,6 +17,11 @@ COMPONENTS
 // @use "../components/link-internal";
 // @use "../components/jumbotron";
 @use "../components/lists";
+@use "../components/buttons";
+
+// Page components
+@use "../components/title-bar";
+@use "../components/page-jumbotron";
 
 // Index pages
 @use "../components/index-site";

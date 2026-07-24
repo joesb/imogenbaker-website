@@ -2,11 +2,6 @@
 layout: base.njk
 ---
 
-{# Title bar #}
-<div class="content-canvas">
-  {% include "layouts/components/title-bar.njk" %}
-</div>
-
 {% if image %}
 <div class="index-site--image-main content-canvas">
   {% figure "index-site--image-main--figure content-canvas-item-full" %}
@@ -14,6 +9,18 @@ layout: base.njk
   {% endfigure %}
 </div>
 {% endif %}
+
+{% if meta.slogan %}
+<div class="index-site--slogan">
+    <p class="index-site--slogan--text">{{ meta.slogan }}</p>
+    <p class="index-site--slogan--contact"><a href="/contact/" class="index-site--slogan--link button">Contact us</a></p>
+</div>
+{% endif %}
+
+{# Title bar #}
+<div class="content-canvas">
+  {% include "layouts/components/title-bar.njk" %}
+</div>
 
 {# Main page content #}
 <div class="content-canvas">

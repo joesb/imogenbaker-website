@@ -7,6 +7,13 @@ layout: base.njk
   {% include "layouts/components/title-bar.njk" %}
 </div>
 
+{# Jumbotron #}
+{% if jumbotron %}
+  <div class="content-canvas">
+    {% include "layouts/components/jumbotron.njk" %}
+  </div>
+{% endif %}
+
 {# Main page content #}
 <div class="content-canvas">
   {{ content | safe }}

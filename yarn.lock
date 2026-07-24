@@ -1738,6 +1738,7 @@ __metadata:
     postcss: "npm:^8.4.38"
     postcss-cli: "npm:^11.0.0"
     postcss-discard-comments: "npm:^7.0.1"
+    posthtml: "npm:^0.16.7"
     rimraf: "npm:^6.0.1"
     sass: "npm:^1.80.6"
     sass-autoprefixer: "npm:^1.0.1"
@@ -2612,6 +2613,16 @@ __metadata:
     posthtml-parser: "npm:^0.11.0"
     posthtml-render: "npm:^3.0.0"
   checksum: 10/e1ce9cda9b9fea0e1ddaccf13c945ca7e1bae2c6f54d34b2d0c9ed5b4b55d456684732257fc85113291807e99fcea585ad959acedca2de94d0744a84e15b31fb
+  languageName: node
+  linkType: hard
+
+"posthtml@npm:^0.16.7":
+  version: 0.16.7
+  resolution: "posthtml@npm:0.16.7"
+  dependencies:
+    posthtml-parser: "npm:^0.11.0"
+    posthtml-render: "npm:^3.0.0"
+  checksum: 10/be101a9515a3cb20c61c0492d6d784e18d174e75b326844abd6692f850605572725a2e1c521db38755d1ccbd81f910101dd92b8a59c8ca36c3c4dc8141874496
   languageName: node
   linkType: hard
 

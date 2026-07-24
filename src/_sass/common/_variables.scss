@@ -6,7 +6,7 @@ $headings-font: "Bebas Neue", var(--font-sans);
 $handwriting-font: "Great Vibes", casual, cursive;
 
 // Font weight
-$base-font-weight-bold: 600;
+$base-font-weight-bold: 700;
 $base-font-weight-regular: 300;
 $base-font-weight-medium: 500;
 $headings-font-weight: 400;
@@ -21,6 +21,7 @@ $color-midnight-blue: #0D698B;
 $color-jet-black-light: color.adjust($color-jet-black, $lightness: 5%);
 $color-jet-black-lighter: color.adjust($color-jet-black, $lightness: 15%);
 $color-jet-black-alpha-75: rgba(26, 26, 29, 0.75);
+$color-jet-black-alpha-50: rgba(26, 26, 29, 0.50);
 $color-ivory-darkish: color.adjust($color-ivory, $lightness: -5%);
 $color-ivory-dark: color.adjust($color-ivory, $lightness: -10%);
 $color-ivory-darker: color.adjust($color-ivory, $lightness: -15%);

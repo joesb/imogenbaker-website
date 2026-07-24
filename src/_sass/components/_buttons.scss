@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  background-color: var(--color-midnight-blue);
+  color: var(--color-text-white);
+  padding: var(--size-fluid-1);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--size-2);
+  margin-block: var(--size-3);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-midnight-blue-dark);
+    text-decoration: none;
+  }
+}
