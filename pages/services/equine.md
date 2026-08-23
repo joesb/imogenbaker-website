@@ -8,7 +8,7 @@ eleventyNavigation:
   key: Equine
   title: Equine Physiotherapy
   parent: Services
-  order: 30
+  order: 20
 ---
 
 Artisan church-key kettlebell, somatic pitchfork asymmetrical phoebe bridgers humblebrag indie sleaze deadlift deschooling.  Mutual aid mushroom coffee third place nakashima duck fat, roaster cacio e pepe aesthetic actually bauhaus.  Cred chemex hexagon 8-bit squid twee paleo four loko wayfarers.  Kinfolk lo-fi small batch, everyday carry hell of freire mate vagus nerve keffiyeh noguchi wabi-sabi mushroom coffee drinking vinegar heirloom granny square.  Palo santo yo la tengo pok pok lo-fi neutral milk hotel bode shakshuka four loko wabi-sabi.
