@@ -15,3 +15,12 @@ button,
     color: var(--color-text-white);
   }
 }
+
+.button-transparent {
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+}

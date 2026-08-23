@@ -1,6 +1,17 @@
 @use "../tools/px-to-rem" as p2r;
 @use "../tools/respond-to" as rt;
 
+
+.open-mobile {
+  .header-main__nav {
+    background-color: var(--color-ivory-alpha-90);
+  }
+
+  .main-nav {
+    margin-top: 5vh;
+  }
+}
+
 .index-site {
   grid-template-rows: 40vh auto auto;
 
@@ -8,9 +19,9 @@
     color: var(--color-text-white);
   }
 
-  .main-nav--list--item {
-    background-color: var(--color-jet-black-alpha-75);
-  }
+  // .main-nav--list--item {
+  //   background-color: var(--color-jet-black-alpha-75);
+  // }
 
   .main-nav--list--item-link {
     color: var(--color-text-white);
