@@ -1,0 +1,41 @@
+///** Mixins: Grid */
+
+// @include grid( );
+@mixin grid( $gap: var(--size-fluid-2) ) {
+  display: grid;
+  gap: $gap;
+}
+
+// @include grid-columns( );
+@mixin grid-columns( $min: 20ch, $max: 1fr, $gap: var(--size-fluid-2), $fit: auto-fit ) {
+  grid-template-columns: repeat($fit, minmax($min, $max));
+}
+
+// @include grid-columns-2( );
+@mixin grid-columns-2( $size1: 1fr, $size2: 1fr, $gap: var(--size-fluid-2), $fit: auto-fit ) {
+  grid-template-columns: $size1 $size2;
+}
+
+// @include grid-rows-2( );
+@mixin grid-rows-2( $size1: 1fr, $size2: 1fr, $gap: var(--size-fluid-2), $fit: auto-fit ) {
+  display: grid;
+  grid-template-rows: $size1 $size2;
+  gap: $gap;
+}
+
+// @include grid-rows-3( );
+@mixin grid-rows-3( $size1: 1fr, $size2: 1fr, $size3: 1fr, $gap: var(--size-fluid-2), $fit: auto-fit ) {
+  display: grid;
+  grid-template-rows: $size1 $size2 $size3;
+  gap: $gap;
+}
+
+// @include grid-unset-columns();
+@mixin grid-unset-columns() {
+  grid-template-columns: unset;
+}
+
+// @include grid-unset-rows();
+@mixin unset-grid-rows() {
+  grid-template-rows: unset;
+}

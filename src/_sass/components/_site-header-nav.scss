@@ -38,6 +38,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  width: unset !important;
 }
 
 .main-nav--list--item {
@@ -84,10 +85,10 @@
   }
 
   .main-nav--list--sublist {
+    background-color: var(--color-background-alpha-90);
 
     .main-nav--list--item {
       border-right: 0;
-      background-color: var(--color-background);
   
       &.current {
         background-color: var(--color-background-dark);

@@ -18,10 +18,12 @@ COMPONENTS
 // @use "../components/jumbotron";
 @use "../components/lists";
 @use "../components/buttons";
+@use "../components/content-grid";
 
 // Page components
 @use "../components/title-bar";
 @use "../components/page-jumbotron";
+@use "../components/forms";
 
 // Index pages
 @use "../components/index-site";

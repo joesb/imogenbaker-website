@@ -1,6 +1,7 @@
 ---
 layout: index.njk
 title: Canine Physiotherapy
+description: Optimum health for working dogs or the family friend, for rehabilitation after surgery or injury, or to ensure performance and quality of life in general health maintenance sessions.
 eleventyNavigation:
   key: Canine
   title: Canine Physiotherapy

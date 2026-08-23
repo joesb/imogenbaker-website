@@ -65,6 +65,7 @@
   position: absolute;
   top: 75vh;
   left: 50vw;
+  width: 80vw;
   transform: translate(-50%, -50%);
   z-index: 1;
   color: var(--color-text-white);
@@ -72,7 +73,7 @@
   font-family: var(--font-family-handwriting);
   background-color: var(--color-jet-black-alpha-50);
   border-radius: var(--size-2);
-  max-inline-size: var(--size-content-4);
+  max-inline-size: var(--size-content-3);
 
   .index-site--slogan--text {
     font-size: var(--font-size-fluid-3);
@@ -80,7 +81,7 @@
     line-height: var(--font-lineheight-0);
     font-family: inherit;
     margin-block: 0;
-    max-inline-size: var(--size-content-1);
+    max-inline-size: var(--size-content-3);
   }
 
   .index-site--slogan--contact {

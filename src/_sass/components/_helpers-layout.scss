@@ -11,6 +11,30 @@
   margin-block-end: var(--size-7);
 }
 
+.margin-block-lg {
+  margin-block: var(--size-8);
+}
+
+.margin-block-lg-start {
+  margin-block-start: var(--size-8);
+}
+
+.margin-block-lg-end {
+  margin-block-end: var(--size-8);
+}
+
+.margin-block-vlg {
+  margin-block: var(--size-10);
+}
+
+.margin-block-vlg-start {
+  margin-block-start: var(--size-10);
+}
+
+.margin-block-vlg-end {
+  margin-block-end: var(--size-10);
+}
+
 // Padding
 .padding-block {
   padding-block: var(--size-7);
