@@ -49,8 +49,22 @@
 
 .site-logo--title--subtitle {
   display: block;
-  padding-inline-start: var(--size-12);
+  padding-inline-start: 6.5rem;
   margin-block: 0;
-  margin-block-start: calc(var(--size-3) * -1);
-  font-size: var(--font-size-fluid-1);
+  margin-block-start: calc(var(--size-3) * -0.75);
+  font-size: var(--font-size-fluid-01);
+  max-inline-size: 40ch;
+}
+
+@include rt.respond-to('small') {
+  .site-logo--title--subtitle {
+    padding-inline-start: 9rem;
+  }
+}
+
+@include rt.respond-to('medium') {
+  .site-logo--title--subtitle {
+    padding-inline-start: var(--size-12);
+    font-size: var(--font-size-fluid-1);
+  }
 }
