@@ -1,4 +1,7 @@
 @use "sass:color";
+@use "base-variables";
+@use "../tools/px-to-rem";
+
 // Fonts
 $primary-font: "Raleway", var(--font-sans);
 $secondary-font: "Raleway", var(--font-sans);
@@ -12,9 +15,38 @@ $base-font-weight-medium: 500;
 $headings-font-weight: 400;
 $handwriting-font-weight: 400;
 
+// Font sizes
+$body-v-sml-font-size-mobile: px-to-rem.px-to-rem(10px);
+$body-v-sml-font-size: px-to-rem.px-to-rem(14px);
+
+$body-sml-font-size-mobile: px-to-rem.px-to-rem(12px);
+$body-sml-font-size: px-to-rem.px-to-rem(16px);
+
+$body-font-size-mobile: px-to-rem.px-to-rem(16px);
+$body-font-size: px-to-rem.px-to-rem(base-variables.$root-font-size);
+
+$lg-body-font-size-mobile: px-to-rem.px-to-rem(19px);
+$lg-body-font-size: px-to-rem.px-to-rem(25px);
+
+$h1-lg-font-size-mobile: px-to-rem.px-to-rem(48px);
+$h1-lg-font-size: px-to-rem.px-to-rem(64px);
+
+$h1-font-size-mobile: px-to-rem.px-to-rem(36px);
+$h1-font-size: px-to-rem.px-to-rem(48px);
+
+$h2-font-size-mobile: 1.25rem;
+$h2-font-size: 1.75rem;
+
+$h3-font-size-mobile: px-to-rem.px-to-rem(18px);
+$h3-font-size: px-to-rem.px-to-rem(20px);
+
+$h4-font-size-mobile: px-to-rem.px-to-rem(17px);
+$h4-font-size: px-to-rem.px-to-rem(19px);
+
 // Colors
 $color-chili-pepper: #DF362D;
 $color-jet-black: #1A1A1D;
+$color-white: #FFFFFF;
 $color-ivory: #D3D3CB;
 $color-midnight-blue: #0D698B;
 
@@ -22,9 +54,13 @@ $color-jet-black-light: color.adjust($color-jet-black, $lightness: 5%);
 $color-jet-black-lighter: color.adjust($color-jet-black, $lightness: 15%);
 $color-jet-black-alpha-75: rgba(26, 26, 29, 0.75);
 $color-jet-black-alpha-50: rgba(26, 26, 29, 0.50);
+$color-white-dark: color.adjust($color-white, $lightness: -10%);
 $color-ivory-darkish: color.adjust($color-ivory, $lightness: -5%);
 $color-ivory-dark: color.adjust($color-ivory, $lightness: -10%);
 $color-ivory-darker: color.adjust($color-ivory, $lightness: -15%);
+$color-ivory-alpha-90: color.adjust($color-ivory, $alpha: -0.1);
+$color-ivory-alpha-75: color.adjust($color-ivory, $alpha: -0.25);
+$color-ivory-alpha-50: color.adjust($color-ivory, $alpha: -0.50);
 $color-midnight-blue-dark: color.adjust($color-midnight-blue, $lightness: -10%);
 
 // Custom media queries

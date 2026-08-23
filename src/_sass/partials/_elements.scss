@@ -26,23 +26,34 @@ ELEMENTS
     --color-jet-black-lighter: #{var.$color-jet-black-lighter};
     --color-jet-black-alpha-75: #{var.$color-jet-black-alpha-75};
     --color-jet-black-alpha-50: #{var.$color-jet-black-alpha-50};
+    --color-white: #{var.$color-white};
+    --color-white-dark: #{var.$color-white-dark};
     --color-ivory: #{var.$color-ivory};
     --color-ivory-dark: #{var.$color-ivory-dark};
     --color-ivory-darkish: #{var.$color-ivory-darkish};
     --color-ivory-darker: #{var.$color-ivory-darker};
+    --color-ivory-alpha-90: #{var.$color-ivory-alpha-90};
+    --color-ivory-alpha-75: #{var.$color-ivory-alpha-75};
+    --color-ivory-alpha-50: #{var.$color-ivory-alpha-50};
     --color-midnight-blue: #{var.$color-midnight-blue};
     --color-midnight-blue-dark: #{var.$color-midnight-blue-dark};
 
     --color-text: var(--color-jet-black);
     --color-text-lighter: var(--color-jet-black-lighter);
-    --color-text-white: var(--color-ivory);
-    --color-text-white-dark: var(--color-ivory-dark);
+    --color-text-white: var(--color-white);
+    --color-text-white-dark: var(--color-white-dark);
 
     --color-background: var(--color-ivory);
     --color-background-dark: var(--color-ivory-dark);
     --color-background-darker: var(--color-ivory-darker);
+    --color-background-alpha-90: var(--color-ivory-alpha-90);
+    --color-background-alpha-75: var(--color-ivory-alpha-75);
     --color-border: var(--color-ivory);
     --color-border-dark: var(var(--color-jet-black));
+
+    --card-background: var(--color-ivory);
+    --card-background-dark: var(--color-ivory-dark);
+    --card-background-none: transparent;
 
     --font-family-primary: #{var.$primary-font};
     --font-family-secondary: #{var.$secondary-font};
@@ -54,7 +65,17 @@ ELEMENTS
     --font-weight-headings: #{var.$headings-font-weight};
     --font-weight-handwriting: #{var.$handwriting-font-weight};
 
-    --font-size-fluid-4: clamp(3rem, 12vw, 4.5rem);
+    --font-size-fluid-000: clamp(#{var.$body-v-sml-font-size-mobile}, 1.3vw, #{var.$body-v-sml-font-size});
+    --font-size-fluid-00: clamp(0.7rem, 1.75vw, 0.85rem);
+    --font-size-fluid-0: clamp(0.75rem, 2vw, 1rem);
+    --font-size-fluid-010: clamp(0.8rem, 3vw, 1.1rem);
+    --font-size-fluid-01: clamp(0.875rem, 3vw, 1.125rem);
+    --font-size-fluid-011: clamp(0.95rem, 3vw, 1.25rem);
+    --font-size-fluid-02: clamp(1rem, 3vw, 1.35rem);
+    --font-size-fluid-12: clamp(1.25rem, 5vw, 1.75rem);
+    --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
+    --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
+    --font-size-fluid-4: clamp(2.5rem, 12vw, 4rem);
   }
   
   html {

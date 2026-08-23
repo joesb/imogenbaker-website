@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   {% set siteName = [ meta.title, meta.subtitle] %}
-  <title>{{ pageTitle or title or siteName | join(" ") }} | {{ siteName | join(" ") }}</title>
+  <title>{% if not siteHome %}{{ pageTitle or title or siteName | join(" ") }} | {% endif %}{{ siteName | join(" ") }}</title>
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon.png" type="image/png">

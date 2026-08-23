@@ -51,6 +51,11 @@ export default async function(eleventyConfig) {
     return '';
   });
 
+  eleventyConfig.addPairedShortcode("ContentGrid", (content, classes) => {
+    classes = Array.isArray(classes) ? classes.join(' ') : classes;
+    return '<div class="content-grid' + ( classes ? ` ${classes}` : '') +'">' + content + '</div>';
+  });
+
   // Return responsive images
   eleventyConfig.addShortcode("image", async function(src, alt, cls, pictureCls = "", sizes = "(min-width: 30em) 50vw, 100vw", widths = [300, 600, 1000, 1980]) {
 		if(alt === undefined) {
@@ -105,23 +110,20 @@ export default async function(eleventyConfig) {
     return metadata;
   };
 
-  // Sort portfolio pieces by date
-  eleventyConfig.addCollection('portfolio', (collection) => {
-    var nav = collection.getFilteredByTag('portfolio');
-    return sortByDate(nav).reverse();
+  // Get Services
+  eleventyConfig.addCollection('services', (collection) => {
+    return collection.getFilteredByGlob('pages/services/*.md').sort((a, b) => {
+      if (a.data.eleventyNavigation.order < b.data.eleventyNavigation.order) return -1;
+      else if (a.data.eleventyNavigation.order > b.data.eleventyNavigation.order) return 1;
+      else return 0;
+    });
   });
 
-  // Sort portfolio pieces by order
-  eleventyConfig.addCollection('portfolioByOrder', (collection) => {
-    var nav = collection.getFilteredByTag('portfolio');
-    return sortByOrder(nav);
-  });
-
-  // Sort portfolio pieces by date
-  eleventyConfig.addCollection('blog', (collection) => {
-    var nav = collection.getFilteredByGlob('pages/blog/*.md');
-    return sortByDate(nav).reverse();
-  });
+  // Sort Blog items by date
+  // eleventyConfig.addCollection('blog', (collection) => {
+  //   var nav = collection.getFilteredByGlob('pages/blog/*.md');
+  //   return sortByDate(nav).reverse();
+  // });
 
   // Get the full year number from a date
   eleventyConfig.addFilter("getFullYear", function(date) {

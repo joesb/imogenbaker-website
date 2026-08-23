@@ -130,8 +130,14 @@ h5,
   font-weight: var(--font-weight-bold);
 }
 
-.centered {
+.text-centered {
   text-align: center;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hide-text {

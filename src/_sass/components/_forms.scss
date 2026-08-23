@@ -1,0 +1,110 @@
+@use "../tools/mixins" as mx;
+@use "../tools/respond-to" as rt;
+
+#honey {
+  @include mx.do-not-display;
+}
+
+.site-form {
+  display: grid;
+  grid-auto-flow: row;
+  gap: var(--size-2);
+  margin-block: var(--size-9);
+
+  hr {
+    margin-block: var(--size-1);
+
+    &::after {
+      line-height: var(--font-lineheight-00);
+    }
+  }
+
+  label {
+    font-size: var(--font-size-fluid-00);
+    text-align: right;
+    font-family: var(--font-primary);
+  }
+}
+
+:where(textarea,select,input:not([type=button],[type=submit],[type=reset])) {
+  background-color: var(--color-white);
+  border-radius: var(--radius-1);
+  border-color: var(--border-color);
+  border-width: 1px;
+  border-style: solid;
+  padding: var(--size-2);
+}
+
+.required {
+  color: var(--color-red);
+  display: inline-block;
+  margin-inline: 0.125rem;
+}
+
+.form-group {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: minmax(10ch, 16ch) 1fr 1fr;
+  column-gap: var(--size-3);
+
+  input,
+  textarea {
+    grid-column: 2 / span 2;
+  }
+
+  textarea {
+    min-block-size: 5lh;
+  }
+}
+
+.form-group--radios {
+  grid-template-columns: minmax(10ch, 16ch) auto 1fr;
+  align-items: center;
+
+  p {
+    grid-column: 2 / span 2;
+    font-size: var(--font-size-fluid-00);
+  }
+
+  input {
+    grid-column: 2 / span 1;
+  }
+
+  label {
+    grid-column: 3;
+    text-align: initial;
+  }
+}
+
+.form-group--submit {
+  margin-block: var(--size-3);
+  button {
+    grid-column: 2 / span 2;
+    font-size: var(--font-size-fluid-01);
+    padding-block: var(--size-3);
+  }
+}
+
+@include rt.respond-to('medium') {
+  .form-group--submit {
+    button {
+      grid-column: 2;
+    }
+  }
+}
+
+:where([type=submit],form button:not([type],[disabled])) {
+  background: var(--color-brand-primary);
+  color: var(--color-text-white);
+  border: 0;
+  border-radius: var(--size-3);
+  transition: all 0.2s ease;
+  box-shadow: unset;
+  text-shadow: unset;
+
+  &:hover {
+    background: var(--color-brand-primary-dark);
+    border-radius: var(--size-1);
+    transition: all 0.2s ease;
+  }
+}
