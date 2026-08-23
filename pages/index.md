@@ -51,7 +51,7 @@ Treatments are tailored specifically to the individual animal, utilizing a range
 
 {{ item.data.description }}
 
-[More About {{ item.data.title }}]({{ item.path }}){.button}
+[More About {{ item.data.title }}]({{ item.url }}){.button}
 {.centered}
 {% endMarkdown %}
   {% endContentGrid %}
