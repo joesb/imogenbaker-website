@@ -3,7 +3,9 @@ layout: index.njk
 title: Equine Physiotherapy
 description: From top competition horses to happy hackers, I ensure your horse is treated to the highest standard, whether for general health maintenance or rehabilitation.
 jumbotron: |
-  Offering a range of techniques and electrotherapies to support injury rehabilitation, or sports performance.
+  **From top competition horses to happy hackers, I ensure your horse is treated to the highest standard, whether for general health maintenance or rehabilitation.**
+  
+  Offering a range of techniques and electrotherapies to support injury rehabilitation or sports performance.
 eleventyNavigation:
   key: Equine
   title: Equine Physiotherapy
@@ -11,6 +13,70 @@ eleventyNavigation:
   order: 20
 ---
 
-Artisan church-key kettlebell, somatic pitchfork asymmetrical phoebe bridgers humblebrag indie sleaze deadlift deschooling.  Mutual aid mushroom coffee third place nakashima duck fat, roaster cacio e pepe aesthetic actually bauhaus.  Cred chemex hexagon 8-bit squid twee paleo four loko wayfarers.  Kinfolk lo-fi small batch, everyday carry hell of freire mate vagus nerve keffiyeh noguchi wabi-sabi mushroom coffee drinking vinegar heirloom granny square.  Palo santo yo la tengo pok pok lo-fi neutral milk hotel bode shakshuka four loko wabi-sabi.
+## What are the benefits of physiotherapy for your horse?
 
-Wide-leg buy nothing yes plz, thrifted garum drinking vinegar waistcoat.  Freegan viral pinterest bruh lion's mane eames.  Band tee master cleanse rams braun decolonize.  Sambas car seat headrest hell of garum yes plz ube black trumpet yorgos attachment style shaman metrograph manifesting fanny pack.  Roof party omakase chartreuse, godard mood board vibecession fashion axe supreme iykyk.  Mate sus sohla el-waylly eames didion nineties shoegaze black trumpet.
+Physiotherapy can be an important part of your horse’s routine health and performance programme. It can help to improve fitness, strength, mobility and overall wellbeing, while also helping to reduce the risk of injury.
+
+Physiotherapy also plays an important role in rehabilitation following injury or surgery. Imogen will work with you to develop an evidence-based, individualised treatment plan tailored to your horse’s specific needs, helping to support their recovery and return to work.
+
+{% ImageTextBlock "/static/images/originals/pexels-barbara-olsen-7882318.jpg", "Close-up of a brown horse with a person adjusting its leash indoors" %}
+
+## What conditions can we treat?
+
+Equine physiotherapy can be beneficial for horses experiencing a wide range of musculoskeletal conditions, including:
+
+- Osteoarthritis
+- Kissing spines
+- Tendon injuries
+- Locking stifle
+- Trigger points
+- Sacroiliac dysfunction
+- Bone fractures
+- PSSM
+- Sweeney shoulder
+- Sidebone and ringbone
+- Navicular syndrome
+
+[Contact](/contact/){.button .padding-inline}
+{.centered}
+
+{% endImageTextBlock %}
+
+Every horse is assessed as an individual, with treatment tailored to their specific presentation, lifestyle and requirements.
+
+## What can you expect from a physiotherapy session?
+
+Every physiotherapy session begins with a thorough assessment of your horse. This includes a static assessment, gait assessment, full palpation and range-of-motion assessment.
+
+These findings are used alongside clinical reasoning to develop an appropriate and individualised treatment plan for your horse.
+
+{% ImageTextBlock "/static/images/originals/scott-ymker-6s3NsdzRec0-unsplash.jpg", "Brown and white horse on brown field during daytime" %}
+
+**Depending on your horse’s needs, treatment may include:**
+
+- Massage
+- Stretching
+- Joint and soft tissue mobilisation
+- Trigger point release
+- Heat therapy
+- Electrotherapies, including LASER and TENS
+
+[Contact](/contact/){.button .padding-inline}
+{.centered}
+
+{% endImageTextBlock %}
+
+All treatment plans are tailored to your horse following a comprehensive assessment, ensuring that treatment is appropriate for their individual needs.
+
+## Exercise Prescription & Ridden Assessments
+
+Following each session, your horse may be given a selection of exercises to support their progress between physiotherapy appointments. These may include pole work, targeted stretches and gentle mobilisation exercises.
+
+Each exercise will be explained and demonstrated during the session, giving you the opportunity to practise them with guidance. This ensures that you feel confident carrying them out correctly and safely between appointments.
+
+Alongside a standard physiotherapy session, Imogen also offers ridden assessments for you and your horse.
+
+A ridden assessment can be particularly useful when investigating issues that are only apparent when your horse is under saddle. Observing your horse during ridden work can provide additional information to support the assessment and help inform their ongoing treatment and rehabilitation plan.
+
+[Contact](/contact/){.button .padding-inline}
+{.centered}

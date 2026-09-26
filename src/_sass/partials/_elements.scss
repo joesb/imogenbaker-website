@@ -72,6 +72,7 @@ ELEMENTS
     --font-size-fluid-01: clamp(0.875rem, 3vw, 1.125rem);
     --font-size-fluid-011: clamp(0.95rem, 3vw, 1.25rem);
     --font-size-fluid-02: clamp(1rem, 3vw, 1.35rem);
+    --font-size-fluid-11: clamp(1.15rem, 4vw, 1.5rem);
     --font-size-fluid-12: clamp(1.25rem, 5vw, 1.75rem);
     --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
     --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
@@ -118,7 +119,7 @@ ELEMENTS
     padding: 0;
   
     li {
-      font-size: var(--font-size-fluid-0);
+      font-size: var(--font-size-fluid-01);
   
       &:last-child {
         margin-bottom: 0px;
@@ -165,7 +166,7 @@ a {
   margin-block: var(--size-fluid-2);
 }
 
-blockquote {
+:where(blockquote) {
   border-color: var(--surface-teal);
   max-inline-size: var(--size-content-3);
   margin-block: var(--size-fluid-2);

@@ -48,6 +48,18 @@
   padding-block-end: var(--size-7);
 }
 
+.padding-inline {
+  padding-inline: var(--size-7);
+}
+
+.padding-inline-start {
+  padding-inline-start: var(--size-7);
+}
+
+.padding-inline-end {
+  padding-inline-end: var(--size-7);
+}
+
 // Borders
 .border-top {
   border-top: 1px solid var(--color-border);

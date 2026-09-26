@@ -2,6 +2,8 @@
 layout: index.njk
 title: Other Animals
 description: Physiotherapy services are available to all animals, to maintain health or achieve the best recovery after injury or surgery.
+jumbotron: |
+  Physiotherapy services are available to all animals, to maintain health or achieve the best recovery after injury or surgery.
 eleventyNavigation:
   key: Other Animals
   title: Other Animals
@@ -9,6 +11,13 @@ eleventyNavigation:
   order: 40
 ---
 
-Ceramics cronut flexitarian, chia angela davis red light therapy booktok.  Celiac cliche sus sartorial, bespoke biohack bedroom pop blundstones.  Red light therapy pothos bicycle rights tinned fish squid, mood board hammock miso bolaño marfa oyster hour dream pop iykyk danish modern.  Church-key grailed selfies, asymmetrical shakshuka didion gatekeep jacobin moss wall phoebe bridgers bespoke schlitz.
+**Physiotherapy can benefit a wide range of animals, helping to support mobility, strength, recovery and overall wellbeing.**
 
-Hipster runoff succulents tufting lo-fi cassette.  Deschooling freire are.na baffler intermittent fasting, big mood tinned fish brutalism buy nothing tarkovsky.  Red light therapy seitan hammock hexagon vibecession furikake phoebe bridgers intelligentsia intermittent fasting.  Helvetica before they sold out koji schlitz, artisan meditation praxis akerman phoebe bridgers fingerstache matcha focaccia are.na braun humblebrag.  Buy nothing pop-up raw denim hyperpop leggings shaman sustainable gatekeep hexagon try-hard DIY wide-leg.  Pork belly narwhal deschooling pickleback swag sound bath.
+![A beautiful cat being gently petted indoors](/static/images/originals/pexels-mimo-s-photography-helyin-bermudez-498271736-28277652.jpg){eleventy:widths=300,600,800}
+
+Treatment is always tailored to the individual animal and their specific needs. Following a thorough assessment, an appropriate treatment and exercise plan will be created to support their health, comfort and rehabilitation.
+
+Whether you have a cat or another much-loved pet, please get in touch. I'm happy to discuss how physiotherapy may be able to help and arrange an appointment tailored to their individual needs.
+
+[Contact](/contact/){.button .padding-inline}
+{.centered}
