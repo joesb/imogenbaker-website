@@ -7,7 +7,7 @@ body:
   classes:
     - "index-site"
 image:
-  path: "./static/images/ps-ijb-001.jpg"
+  path: "/static/images/ps-ijb-001.jpg"
   alt: "Imogen Baker"
 services:
   classes:

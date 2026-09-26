@@ -149,12 +149,13 @@ export default async function(eleventyConfig) {
   });
 
   async function getPictureData(src, widths = [300, 600, 1000, 1980]) {
-    let metadata = await Image(src, {
-			widths: widths,
-			formats: ['jpeg'],
+    let metadata = await Image('./pages' + src, {
+      returnType: 'object',
+      widths: widths,
+      formats: ['jpeg'],
       urlPath: "/static/img/",
-      outputDir: "/pages/static/img/"
-		});
+      outputDir: "./static/img/"
+    });
     return metadata;
   };
 
