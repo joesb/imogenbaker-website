@@ -9,6 +9,8 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import Image from "@11ty/eleventy-img";
 import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import path from 'path';
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -16,6 +18,41 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(eleventyImageOnRequestDuringServePlugin);
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // which file extensions to process
+    extensions: "html",
+
+    // Add any other Image utility options here:
+
+    // optional, output image formats
+    formats: ["webp", "jpeg"],
+    // formats: ["auto"],
+    sharpWebpOptions: {
+      quality: 67
+    },
+    sharpJpegOptions: {
+      quality: 67
+    },
+
+    // optional, output image widths
+    widths: [1980, 1200, 800, 500, 300],
+
+    urlPath: "/static/img/",
+    outputDir: "./_site/static/img/",
+
+    // optional, attributes assigned on <img> override these values.
+    defaultAttributes: {
+      loading: "lazy",
+      decoding: "async",
+      sizes: "auto",
+    },
+
+    filenameFormat: (id, src, width, format) => {
+      const { name } = path.parse(src);
+      return `${name}-${width}w.${format}`;
+    },
+  });
 
   // Minify CSS
   eleventyConfig.addFilter('cssmin', function (code) {
@@ -54,6 +91,17 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPairedShortcode("ContentGrid", (content, classes) => {
     classes = Array.isArray(classes) ? classes.join(' ') : classes;
     return '<div class="content-grid' + ( classes ? ` ${classes}` : '') +'">' + content + '</div>';
+  });
+
+  eleventyConfig.addPairedShortcode("ImageTextBlock", (content, imgSrc, imgAlt, classes = '') => {
+    classes = Array.isArray(classes) ? classes.join(' ') : classes;
+    let imgMd = '![' + imgAlt + '](' + imgSrc + '){eleventy:widths=300,600,800}';
+    let text = '<div class="image-text-block content-canvas-item-full content-canvas">' +
+      '<div class="content-grid content-grid-columns-2 content-canvas-item-wide' + ( classes ? ` ${classes}` : '') +'">' + 
+        '<div class="text-block">' + markdownLibrary.render(content) + '</div>' +
+        '<div class="image-block">' + markdownLibrary.render(imgMd) + '</div>' +
+    '</div></div>';
+    return text;
   });
 
   // Return responsive images
@@ -105,7 +153,7 @@ export default async function(eleventyConfig) {
 			widths: widths,
 			formats: ['jpeg'],
       urlPath: "/static/img/",
-      outputDir: "./static/img/"
+      outputDir: "/pages/static/img/"
 		});
     return metadata;
   };

@@ -4,7 +4,7 @@ title: Services
 eleventyNavigation:
   key: Services
   title: Services
-  order: 30
+  order: 20
 permalink: /services/
 services:
   classes:

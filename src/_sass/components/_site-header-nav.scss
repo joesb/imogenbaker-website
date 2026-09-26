@@ -25,10 +25,11 @@
 }
 
 .main-nav--list--item-link {
+  color: var(--color-text);
   font-weight: inherit;
 
   &:hover {
-    color: var(--text-1);
+    color: var(--color-text);
     text-decoration-line: underline;
   }
 }

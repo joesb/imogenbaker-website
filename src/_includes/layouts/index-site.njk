@@ -5,7 +5,8 @@ layout: base.njk
 {% if image %}
 <div class="index-site--image-main content-canvas">
   {% figure "index-site--image-main--figure content-canvas-item-full" %}
-    {% image image.path, image.alt, 'index-site--image-main--image image-obj-cover image-max-height-100vh','index-site--image-main--picture' %}
+    {# {% image image.path, image.alt, 'index-site--image-main--image image-obj-cover image-max-height-100vh','index-site--image-main--picture' %} #}
+    {% Markdown true %}![{{ image.alt }}]({{ image.path }}){.index-site--image-main--image .image-obj-cover .image-max-height-100vh}{% endMarkdown %}
   {% endfigure %}
 </div>
 {% endif %}

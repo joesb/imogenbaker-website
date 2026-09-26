@@ -88,9 +88,9 @@
 .content-canvas-item-wide-left {
   grid-column: wide-start/main-end;
   
-  @include respond-to.respond-to('large') {
-    grid-column: wide-start/main-mid;
-  }
+  // @include respond-to.respond-to('large') {
+  //   grid-column: wide-start/main-mid;
+  // }
 }
 
 .content-canvas-item-full {

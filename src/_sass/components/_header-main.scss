@@ -25,7 +25,7 @@
 
   .open-text {
     display: none;
-    color: var(--text-1);
+    color: var(--color-text);
   }
 
   .header-main__menu__burger {
@@ -40,7 +40,7 @@
       height: px-to-rem.px-to-rem(3px);
       transition: 0.3s ease-in-out;
       border-radius: px-to-rem.px-to-rem(2px);
-      background-color: var(--text-1);
+      background-color: var(--color-text);
       margin-bottom: px-to-rem.px-to-rem(4px);
     }
   }
@@ -70,7 +70,7 @@
     .header-main__menu {
       .header-main__menu__burger {
         div {
-          background-color: var(--text-1);
+          background-color: var(--color-text);
         }
         div:nth-child(1) {
           transition: 0.3s ease-in-out;
@@ -92,7 +92,7 @@
 
 .css-nav--close {
 	display: none;
-	color: var(--text-1);
+	color: var(--color-text);
 }
 
 .js {
