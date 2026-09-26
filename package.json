@@ -8,7 +8,7 @@
   "scripts": {
     "build": "(yarn build:dryrun) && npx @11ty/eleventy",
     "build:dryrun": "(yarn sass:build) && (npx @11ty/eleventy --dryrun)",
-    "clean": "npx rimraf -v _site/ src/_includes/assets/css/ pages/static/img/",
+    "clean": "npx rimraf -v _site/ src/_includes/assets/css/ pages/static/img/ static/img/",
     "watch": "npx eleventy --watch",
     "serve": "(yarn clean) && (yarn sass:build) && (npx @11ty/eleventy --dryrun) && (npx @11ty/eleventy --serve & yarn sass:dev)",
     "dev": "yarn serve",

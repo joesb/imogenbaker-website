@@ -115,7 +115,7 @@ export default async function(eleventyConfig) {
 			widths: widths,
 			formats: ['webp', 'jpeg'],
       urlPath: "/static/img/",
-      outputDir: "./static/img/"
+      outputDir: "./_site/static/img/"
 		});
 
 		let lowsrc = metadata.jpeg[0];
@@ -145,7 +145,7 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addAsyncShortcode("imageData", async function(src) {
     var picture = await getPictureData(src, [800]);
-    return picture.jpeg[0].outputPath;
+    return picture.jpeg[0].url;
   });
 
   async function getPictureData(src, widths = [300, 600, 1000, 1980]) {
@@ -154,7 +154,7 @@ export default async function(eleventyConfig) {
       widths: widths,
       formats: ['jpeg'],
       urlPath: "/static/img/",
-      outputDir: "./static/img/"
+      outputDir: "./_site/static/img/"
     });
     return metadata;
   };
