@@ -1,7 +1,7 @@
 ---
 layout: index-site.njk
 title: Welcome
-description: 
+description: Imogen Baker is a fully qualified and insured Veterinary Physiotherapist, as well as a BHS Stage 3 Accredited Professional Coach (APC).
 siteHome: true
 body:
   classes:
@@ -21,13 +21,24 @@ services:
       - content-grid-item--card
 ---
 
-Imogen Baker is a fully qualified and insured Veterinary Physiotherapist. Imogen works with a multidisciplinary team of vets and other paraprofessionals to achieve the best outcome for your animal.
+Imogen Baker is a fully qualified and insured Veterinary Physiotherapist, as well as a BHS Stage 3 Accredited Professional Coach (APC).{.jumbotron}
+
+**With a passion for animal wellbeing, she combines science-led manual therapies, tailored exercise plans, and advanced electrotherapies to deliver exceptional care.**
+{.large}
+
+Her coaching approach is rooted in veterinary physiotherapy, blending scientific expertise with a deep understanding of both horse and rider to strengthen their partnership.{.large}
+
+Her aim is to help your animals move better, feel better and perform better.
+
+Whether it’s addressing performance-related challenges in your horse, supporting your dog’s recovery after surgery, or providing gentle pain relief for your senior companion, Imogen’s expertise ensures your animal receives the highest standard of care.
 
 ---
 
-## Why physiotherapy for your animal?
+## Why Physiotherapy?
 
-Treatments are tailored specifically to the individual animal, utilizing a range of manual therapies, electrotherapies and prescription exercises.
+Veterinary physiotherapy is an important part of your animal's health plan to improve their performance, to recovery from surgery, and for general pain management. Veterinary physiotherapy can also play a key role in preventing injury and managing pain by improving strength and fitness.
+
+Imogen ensures treatments are tailored specifically to the individual animal, using a range of approaches including manual therapies, electrotherapies and prescription exercises.
 
 - Chronic pain and arthritis management
 - Prevent Injury or secondary compensations
