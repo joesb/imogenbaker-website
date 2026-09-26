@@ -153,7 +153,7 @@ export default async function(eleventyConfig) {
 			widths: widths,
 			formats: ['jpeg'],
       urlPath: "/static/img/",
-      outputDir: "./static/img/"
+      outputDir: "/pages/static/img/"
 		});
     return metadata;
   };
