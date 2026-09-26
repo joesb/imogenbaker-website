@@ -18,12 +18,6 @@
   padding: p2r.px-to-rem(145px) p2r.px-to-rem(25px) p2r.px-to-rem(25px) p2r.px-to-rem(25px);
 }
 
-.open-mobile {
-  .header-main__nav {
-    display: block;
-  }
-}
-
 .main-nav--list--item-link {
   color: var(--color-text);
   font-weight: inherit;
@@ -40,6 +34,18 @@
   top: 100%;
   left: 0;
   width: unset !important;
+}
+
+.open-mobile {
+  .header-main__nav {
+    display: block;
+  }
+
+  .main-nav--list--sublist {
+    display: block;
+    position: relative;
+    margin-inline-start: var(--size-7);
+  }
 }
 
 .main-nav--list--item {

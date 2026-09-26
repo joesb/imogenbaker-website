@@ -74,6 +74,7 @@ ELEMENTS
     --font-size-fluid-02: clamp(1rem, 3vw, 1.35rem);
     --font-size-fluid-11: clamp(1.15rem, 4vw, 1.5rem);
     --font-size-fluid-12: clamp(1.25rem, 5vw, 1.75rem);
+    --font-size-fluid-13: clamp(1.25rem, 5vw, 2rem);
     --font-size-fluid-2: clamp(1.5rem, 6vw, 2.5rem);
     --font-size-fluid-3: clamp(2rem, 9vw, 3.5rem);
     --font-size-fluid-4: clamp(2.5rem, 12vw, 4rem);
@@ -180,4 +181,19 @@ a {
       line-height: var(--font-lineheight-2) !important;
     }
   }
+}
+
+:where(dl) {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: var(--size-3);
+  
+  > * {
+    align-self: top;
+  }
+}
+
+:where(dt:not(:first-of-type)),
+:where(dd:not(:first-of-type)) {
+    margin-block-start: var(--size-3);
 }
