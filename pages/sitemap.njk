@@ -1,0 +1,28 @@
+---
+permalink: /sitemap.xml
+layout:
+eleventyExcludeFromCollections: true
+date: Last Modified
+---
+<?xml version="1.0" encoding="utf-8"?>{% set pages = collections.all | sortByDate(false) | excludePages(excludeURLs) %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for page in pages %}
+{% if page.data.pagination.pages.length > 0 %}
+  {% for item in page.data.pagination.pages %}
+  {% set pageUrl %}{% if loop.index0 > 0 %}{{ page.url }}/{{ loop.index0}}/{% else %}{{ page.url }}{% endif %}{% endset %}
+  <url>
+      <loc>{{ pageUrl | htmlBaseUrl(env.baseUrl) }}</loc>
+      <lastmod>{{ page.date | dateToRfc3339 }}</lastmod>{% if page.data.sitemap.changefreq %}
+      <changefreq>{{ page.data.sitemap.changefreq }}</changefreq>{% endif %}{% if page.data.sitemap.priority %}
+      <priority>{{ page.data.sitemap.priority }}</priority>{% endif %}
+  </url>
+  {% endfor %}
+{% else %}
+  <url>
+      <loc>{{ page.url | htmlBaseUrl(env.baseUrl) }}</loc>
+      <lastmod>{{ page.date | dateToRfc3339 }}</lastmod>{% if page.data.sitemap.changefreq %}
+      <changefreq>{{ page.data.sitemap.changefreq }}</changefreq>{% endif %}{% if page.data.sitemap.priority %}
+      <priority>{{ page.data.sitemap.priority }}</priority>{% endif %}
+  </url>
+{% endif %}
+{% endfor %}
+</urlset>

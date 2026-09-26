@@ -213,6 +213,17 @@ export default async function(eleventyConfig) {
     });
   }
 
+  
+  eleventyConfig.addFilter('sortByDate', (collection, andSticky = true) => {
+    return sortByDate(collection, andSticky);
+  });
+
+  eleventyConfig.addFilter('excludePages', (collection, excludedURLs = []) => {
+    return collection.filter((item) => {
+      return excludedURLs.includes(item.url) ? 0 : 1;
+    });
+  });
+
   eleventyConfig.addPassthroughCopy('static/');
   eleventyConfig.addWatchTarget('./src/_sass/');
   eleventyConfig.addPassthroughCopy('robots.txt');
