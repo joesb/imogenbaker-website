@@ -24,9 +24,12 @@ services:
 Imogen Baker is a fully qualified and insured Veterinary Physiotherapist, as well as a BHS Stage 3 Accredited Professional Coach (APC).{.jumbotron}
 
 **With a passion for animal wellbeing, she combines science-led manual therapies, tailored exercise plans, and advanced electrotherapies to deliver exceptional care.**
-{.large}
+{.large .content-canvas-item-left}
 
-Her coaching approach is rooted in veterinary physiotherapy, blending scientific expertise with a deep understanding of both horse and rider to strengthen their partnership.{.large}
+![Imogen Baker equine physiotherapist](/static/images/ijb-physio-equine.jpg){.image-rounded}
+{.content-canvas-item-wide-right .content-canvas-item-right--span-2 .content-canvas-span-start-content-top}
+
+Her coaching approach is rooted in veterinary physiotherapy, blending scientific expertise with a deep understanding of both horse and rider to strengthen their partnership.{.large  .content-canvas-item-left}
 
 Her aim is to help your animals move better, feel better and perform better.
 

@@ -95,11 +95,11 @@ export default async function(eleventyConfig) {
 
   eleventyConfig.addPairedShortcode("ImageTextBlock", (content, imgSrc, imgAlt, classes = '') => {
     classes = Array.isArray(classes) ? classes.join(' ') : classes;
-    let imgMd = '![' + imgAlt + '](' + imgSrc + '){eleventy:widths=300,600,800}';
+    let imgMd = '![' + imgAlt + '](' + imgSrc + '){eleventy:widths=300,600,800,1000 .image-obj-cover}';
     let text = '<div class="image-text-block content-canvas-item-full content-canvas">' +
       '<div class="content-grid content-grid-columns-2 content-canvas-item-wide' + ( classes ? ` ${classes}` : '') +'">' + 
-        '<div class="text-block">' + markdownLibrary.render(content) + '</div>' +
-        '<div class="image-block">' + markdownLibrary.render(imgMd) + '</div>' +
+        '<div class="image-text-block--text">' + markdownLibrary.render(content) + '</div>' +
+        '<div class="image-text-block--image">' + markdownLibrary.renderInline(imgMd) + '</div>' +
     '</div></div>';
     return text;
   });
