@@ -1,5 +1,9 @@
 .image-text-block {
   margin-block: var(--size-8);
-  padding-block: var(--size-5);
   background-color: var(--card-background);
+}
+
+.image-text-block--text {
+  padding-block: var(--size-5);
+  padding-inline: var(--size-5);
 }

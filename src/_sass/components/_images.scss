@@ -69,3 +69,7 @@
 .image-obj-pos-bottom {
   object-position: center bottom;
 }
+
+.image-rounded {
+  border-radius: var(--radius-2);
+}

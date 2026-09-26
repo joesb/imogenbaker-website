@@ -19,7 +19,7 @@ For dogs recovering from an injury or surgery, physiotherapy provides structured
 
 Physiotherapy can also be particularly beneficial for older dogs, helping to maintain mobility, manage stiffness and support comfort, allowing them to stay active and enjoy a good quality of life for longer.
 
-{% ImageTextBlock "/static/images/originals/pexels-samson-katt-5255527.jpg" "A woman pets a dog in a cozy indoor setting with wooden flooring" %}
+{% ImageTextBlock "/static/images/ijb-physio-canine.jpg", "Imogen Baker treating a dog as a canine physiotherapist" %}
 
 ## What conditions can physiotherapy help with?
 

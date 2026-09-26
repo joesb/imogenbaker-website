@@ -19,7 +19,7 @@ Physiotherapy can be an important part of your horse’s routine health and perf
 
 Physiotherapy also plays an important role in rehabilitation following injury or surgery. Imogen will work with you to develop an evidence-based, individualised treatment plan tailored to your horse’s specific needs, helping to support their recovery and return to work.
 
-{% ImageTextBlock "/static/images/originals/pexels-barbara-olsen-7882318.jpg", "Close-up of a brown horse with a person adjusting its leash indoors" %}
+{% ImageTextBlock "/static/images/ijb-physio-equine.jpg", "Imogen Baker treating a brown-and-white skewbald horse as an equine physiotherapist" %}
 
 ## What conditions can we treat?
 

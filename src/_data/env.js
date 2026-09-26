@@ -1,7 +1,8 @@
 import 'dotenv/config';
 const environment = process.env.ELEVENTY_ENV;
 const PROD_ENV = 'production';
-const prodUrl = 'https://beta.imogenbaker.co.uk';
+const PROD_URL = process.env.PROD_URL;
+const prodUrl = PROD_URL || 'https://beta.imogenbaker.co.uk';
 const devUrl = 'http://localhost:8080';
 const baseUrl = environment === PROD_ENV ? prodUrl : devUrl;
 const isProd = environment === PROD_ENV;
