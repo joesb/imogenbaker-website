@@ -15,7 +15,7 @@ classes:
       - margin-block
 prices:
   - 
-    type: equine
+    type: equine-physio
     title: Equine Physio
     items:
       - 
@@ -31,7 +31,7 @@ prices:
         label: Book a physiotherapy appointment and one-hour riding lesson together
         price: £95  
   - 
-    type: canine
+    type: canine-physio
     title: Canine Physio
     items:
       -
@@ -44,7 +44,7 @@ prices:
         label: Please enquire for bundle prices (groups of 3 or more)
         price:
   - 
-    type: other
+    type: other-physio
     title: Other Animals Physio
     items:
       - 
@@ -54,7 +54,7 @@ prices:
         label: Other animal follow up appointment
         price: £50
   - 
-    type: coaching
+    type: equine-coaching
     title: Coaching
     items:
       -
