@@ -72,14 +72,16 @@ Booking, prices, and cancellations policy detailed below.
 
 {% ContentGrid classes.contentGrid %}
   {% for item in prices %}
-<div class="content-grid-item content-grid-item--card">
+<div class="content-grid-item content-grid-item--card prices-grid-item">
   {% Markdown %}
 ### {{ item.title }}{.centered .margin-block-end}
 
-  <dl>{% for price in item.items %}
-    <dt>{{ price.label }}</dt>
-    <dd>{{ price.price }}</dd>{% endfor %}
-  </dl>
+  <div class="price-list">
+    <dl>{% for price in item.items %}
+      <dt>{{ price.label }}</dt>
+      <dd>{{ price.price }}</dd>{% endfor %}
+    </dl>
+  </div>
 
 [Enquire](/contact/?type={{ item.type }}){.button}
 {.centered}
