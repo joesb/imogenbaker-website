@@ -1,9 +1,9 @@
 ---
 layout: index.njk
 title: Equine Coaching
-description: Imogen combines her BHS Stage 3 coaching qualification with her Veterinary Physiotherapy knowledge to take a holistic approach to horse and rider.
+description: Alongside her physiotherapy training, Imogen has over six years of formal coaching experience and loves sharing her knowledge to help riders and horses perform better.
 jumbotron: |
-  Imogen combines her BHS Stage 3 coaching qualification with her Veterinary Physiotherapy knowledge to take a holistic approach to horse and rider.
+  Alongside her physiotherapy training, Imogen has over six years of formal coaching experience and loves sharing her knowledge to help riders and horses perform better.
 eleventyNavigation:
   key: Equine
   title: Equine Coaching
@@ -12,6 +12,8 @@ eleventyNavigation:
 ---
 
 ## Why have a veterinary physiotherapist as your riding coach?
+
+Imogen combines her BHS Stage 3 coaching qualification with her Veterinary Physiotherapy knowledge to take a holistic approach to horse and rider.
 
 Imogen's understanding of equine biomechanics helps her use rider corrections and exercises to improve your horse’s movement, balance, strength and way of going in order to help your horse move correctly from the start.
 

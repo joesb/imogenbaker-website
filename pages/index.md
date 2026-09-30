@@ -65,7 +65,7 @@ Imogen ensures treatments are tailored specifically to the individual animal, us
 
 {{ item.data.description }}
 
-[More About {{ item.data.title }}]({{ item.url }}){.button}
+[More about {{ item.data.title }}]({{ item.url | log }}){.button}
 {.centered}
 {% endMarkdown %}
   {% endContentGrid %}

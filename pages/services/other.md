@@ -1,9 +1,9 @@
 ---
 layout: index.njk
 title: Other Animals
-description: Physiotherapy services are available to all animals, to maintain health or achieve the best recovery after injury or surgery.
+description: Imogen Baker Veterinary Physiotherapy welcomes all animals, helping your pet recover well from surgery or injury and get back to feeling like themselves again.
 jumbotron: |
-  Physiotherapy services are available to all animals, to maintain health or achieve the best recovery after injury or surgery.
+  Imogen Baker Veterinary Physiotherapy welcomes all animals, helping your pet recover well from surgery or injury and get back to feeling like themselves again.
 eleventyNavigation:
   key: Other Animals
   title: Other Animals

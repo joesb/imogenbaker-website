@@ -1,9 +1,9 @@
 ---
 layout: index.njk
 title: Equine Physiotherapy
-description: From top competition horses to happy hackers, I ensure your horse is treated to the highest standard, whether for general health maintenance or rehabilitation.
+description: Whether recovering from injury or maintaining good health, every horse receives treatment tailored to their needs, from elite competitors to family companions.
 jumbotron: |
-  **From top competition horses to happy hackers, I ensure your horse is treated to the highest standard, whether for general health maintenance or rehabilitation.**
+  **Whether recovering from injury or maintaining good health, every horse receives treatment tailored to their needs, from elite competitors to family companions.**
   
   Offering a range of techniques and electrotherapies to support injury rehabilitation or sports performance.
 eleventyNavigation:

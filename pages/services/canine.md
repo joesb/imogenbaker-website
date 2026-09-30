@@ -1,9 +1,9 @@
 ---
 layout: index.njk
 title: Canine Physiotherapy
-description: Optimum health for working dogs or the family friend, for rehabilitation after surgery or injury, or to ensure performance and quality of life in general health maintenance sessions.
+description: Imogen's goal is for every dog, whether a hard-working athlete or a family pet, to move better and feel better, from rehabilitation through to lifelong wellbeing.
 jumbotron: |
-  Optimum health for working dogs or the family friend, for rehabilitation after surgery or injury, or to ensure performance and quality of life in general health maintenance sessions.
+  Imogen's goal is for every dog, whether a hard-working athlete or a family pet, to move better and feel better, from rehabilitation through to lifelong wellbeing.
 eleventyNavigation:
   key: Canine
   title: Canine Physiotherapy
