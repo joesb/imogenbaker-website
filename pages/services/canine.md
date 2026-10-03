@@ -19,11 +19,11 @@ For dogs recovering from an injury or surgery, physiotherapy provides structured
 
 Physiotherapy can also be particularly beneficial for older dogs, helping to maintain mobility, manage stiffness and support comfort, allowing them to stay active and enjoy a good quality of life for longer.
 
-{% ImageTextBlock "/static/images/ijb-physio-canine.jpg", "Imogen Baker treating a dog as a canine physiotherapist" %}
+{% ImageTextBlock "/static/images/ijb-physio-canine-00.jpg", "Imogen Baker treating a dog as a canine physiotherapist" %}
 
 ## What conditions can physiotherapy help with?
 
-Physiotherapy can be beneficial for a wide range of musculoskeletal and neurological conditions, including:
+Physiotherapy is beneficial for many musculoskeletal and neurological conditions:
 
 - Hip dysplasia
 - Elbow dysplasia
@@ -51,7 +51,7 @@ Each physiotherapy session begins with a thorough assessment of your dog. This i
 
 The findings from this assessment are then used to develop a clinically reasoned and individually tailored treatment plan. This ensures that your dog receives the most appropriate care for their current condition, needs and stage of rehabilitation.
 
-{% ImageTextBlock "/static/images/originals/pexels-cottonbro-6568498.jpg" "Close-up of a German Shepherd being massaged" %}
+{% ImageTextBlock "/static/images/ijb-physio-canine-02.jpg" "Imogen Baker treating a dog as a canine physiotherapist" %}
 **Depending on your dog’s individual needs, treatment may include:**
 
 - Massage
