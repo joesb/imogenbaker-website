@@ -27,7 +27,7 @@ export async function onRequestPost(context) {
     const honeypot = output["contact-name"]
     // Return early with pretend confirmation if bot hit honeypot
     if (honeypot !== "") {
-      return Response.redirect("https://julietbick.com/contact-confirmation/", 303)
+      return Response.redirect("https://imogenbaker.co.uk/contact-confirmation/", 303)
     }
 
     const messageContent = `Sender: ${output.name} — ${output.email}
@@ -43,17 +43,17 @@ ${output.message}`;
       from: context.env.SENDER_EMAIL,
       replyTo: output.email,
       to: context.env.RECIPIENT_EMAIL,
-      subject: `[JulietBick.com] Contact from ${output.name}: ${output.subject}`,
+      subject: `[ImogenBaker.co.uk] Contact from ${output.name}: ${output.subject}`,
       text: messageContent,
     });
     console.log({data, error});
     if (error) {
-      return Response.redirect("https://julietbick.com/404/", 303)
+      return Response.redirect("https://imogenbaker.co.uk/404/", 303)
     } else {
-      return Response.redirect("https://julietbick.com/contact-confirmation/", 303)
+      return Response.redirect("https://imogenbaker.co.uk/contact-confirmation/", 303)
     }
   } catch (err) {
-    console.log(err);
-    return Response.redirect("https://julietbick.com/404/?error=json_parsing", 303)
+    console.log({data, err});
+    return Response.redirect("https://imogenbaker.co.uk/404/?error=json_parsing", 303)
   }
 }
