@@ -37,7 +37,7 @@ Equine physiotherapy can be beneficial for horses experiencing a wide range of m
 - Sidebone and ringbone
 - Navicular syndrome
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-physio){.button .padding-inline}
 {.centered}
 
 {% endImageTextBlock %}
@@ -61,7 +61,7 @@ These findings are used alongside clinical reasoning to develop an appropriate a
 - Heat therapy
 - Electrotherapies, including LASER and TENS
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-physio){.button .padding-inline}
 {.centered}
 
 {% endImageTextBlock %}
@@ -78,5 +78,5 @@ Alongside a standard physiotherapy session, Imogen also offers ridden assessment
 
 A ridden assessment can be particularly useful when investigating issues that are only apparent when your horse is under saddle. Observing your horse during ridden work can provide additional information to support the assessment and help inform their ongoing treatment and rehabilitation plan.
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-physio){.button .padding-inline}
 {.centered}

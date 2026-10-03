@@ -38,7 +38,7 @@ Physiotherapy is beneficial for many musculoskeletal and neurological conditions
 - Cruciate disease
 - Tendon injuries
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=canine-physio){.button .padding-inline}
 {.centered}
 
 {% endImageTextBlock %}
@@ -63,7 +63,7 @@ The findings from this assessment are then used to develop a clinically reasoned
 - Therapeutic exercise
 - Balance and proprioceptive exercises
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=canine-physio){.button .padding-inline}
 {.centered}
 
 {% endImageTextBlock %}
@@ -77,3 +77,6 @@ Exercise prescription is a key part of successful rehabilitation. At the end of 
 Each exercise will be demonstrated to you during the session, giving you the opportunity to ask questions and make sure you feel confident carrying them out correctly at home.
 
 Your dog’s exercise programme will be reviewed and adapted as they progress, ensuring their rehabilitation continues to be appropriate and effective at every stage.
+
+[Contact](/contact/?type=canine-physio){.button .padding-inline}
+{.centered}

@@ -22,7 +22,7 @@ Imogen's understanding of equine biomechanics helps her use rider corrections an
 
 Lessons are fun, educational and tailored to each horse and rider, helping you develop the knowledge and skills to support correct movement of your horse and to build strength and flexibility.
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-coaching){.button .padding-inline}
 {.centered}
 
 ## What to expect in a coaching session?
@@ -36,7 +36,7 @@ This allows her to identify areas for improvement and select exercises that bene
 
 All exercises are chosen with equine biomechanics at the centre and are tailored to suit each horse and rider, helping you make positive and lasting progress.
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-coaching){.button .padding-inline}
 {.centered}
 
 ## Imogen’s Coaching expertise
@@ -54,5 +54,5 @@ Her coaching expertise includes:
 - Helping riders learn how to school their horses effectively and improve their way of going
 - Developing the horse’s strength, balance and ability to move correctly
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-coaching){.button .padding-inline}
 {.centered}
