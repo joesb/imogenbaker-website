@@ -3,12 +3,22 @@
   "main": "functions/api/submit.js",
   "compatibility_date": "2026-08-20",
   "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "redact_query_string": false,
     "logs": {
       "enabled": true,
-      "invocation_logs": true
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
     },
     "traces": {
-      "enabled": false
+      "enabled": false,
+      "head_sampling_rate": 1,
+      "persist": true
+    },
+    "issues": {
+      "enabled": true
     }
   },
   "assets": {
