@@ -3,7 +3,13 @@
   "main": "functions/api/submit.js",
   "compatibility_date": "2026-08-20",
   "observability": {
-    "enabled": true
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true
+    },
+    "traces": {
+      "enabled": false
+    }
   },
   "assets": {
     "directory": "./_site",
