@@ -26,7 +26,7 @@ Imogen Baker is a fully qualified and insured Veterinary Physiotherapist, as wel
 **With a passion for animal wellbeing, she combines science-led manual therapies, tailored exercise plans, and advanced electrotherapies to deliver exceptional care.**
 {.large .content-canvas-item-left}
 
-![Imogen Baker equine physiotherapist](/static/images/ijb-physio-equine.jpg){.image-rounded}
+![Imogen Baker equine physiotherapist](/static/images/ijb-physio-equine-00.jpg){.image-rounded}
 {.content-canvas-item-wide-right .content-canvas-item-right--span-2 .content-canvas-span-start-content-top}
 
 Her coaching approach is rooted in veterinary physiotherapy, blending scientific expertise with a deep understanding of both horse and rider to strengthen their partnership.{.large  .content-canvas-item-left}
@@ -40,6 +40,9 @@ Whether it’s addressing performance-related challenges in your horse, supporti
 ## Why Physiotherapy?
 
 Veterinary physiotherapy is an important part of your animal's health plan to improve their performance, to recovery from surgery, and for general pain management. Veterinary physiotherapy can also play a key role in preventing injury and managing pain by improving strength and fitness.
+
+![Imogen Baker canine physiotherapist](/static/images/ijb-physio-canine-00.jpg){.image-rounded}
+{.content-canvas-item-wide-right .content-canvas-item-right--span-3}
 
 Imogen ensures treatments are tailored specifically to the individual animal, using a range of approaches including manual therapies, electrotherapies and prescription exercises.
 
