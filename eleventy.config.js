@@ -228,7 +228,9 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('static/');
   eleventyConfig.addWatchTarget('./src/_sass/');
   eleventyConfig.addPassthroughCopy('robots.txt');
-  eleventyConfig.addPassthroughCopy('CNAME');
+  eleventyConfig.addPassthroughCopy({ 'pages/favicon.ico': '/favicon.ico' });
+  eleventyConfig.addPassthroughCopy({ 'pages/site.webmanifest': '/site.webmanifest' });
+  eleventyConfig.addPassthroughCopy({ 'pages/static/favicon': '/static/favicon' });
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
