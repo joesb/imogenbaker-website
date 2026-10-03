@@ -57,7 +57,7 @@ export default async function(eleventyConfig) {
 
   // Minify CSS
   eleventyConfig.addFilter('cssmin', function (code) {
-    css = new CleanCSS({}).minify(code).styles;
+    let css = new CleanCSS({}).minify(code).styles;
     return postCSS([ autoprefixer, postCSSDC({removeAll: true}) ]).process(css).css;
   });
 
