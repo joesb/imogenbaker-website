@@ -29,7 +29,7 @@ Lessons are fun, educational and tailored to each horse and rider, helping you d
 
 During your coaching session, Imogen will assess you and your horse as you warm up, providing positional corrections and guidance where needed.
 
-![A rider on a horse in an indoor arena for an equine coaching session](/static/images/coaching/1S8A1570.jpeg){.image-rounded eleventy:widths=300,600,800}
+![A rider on a horse in an indoor arena for an equine coaching session](/static/images/coaching/1S8A1657.jpeg){.image-rounded eleventy:widths=300,600,800}
 {.content-canvas-item-wide-right .content-canvas-item-right--span-3}
 
 This allows her to identify areas for improvement and select exercises that benefit both horse and rider, helping to develop strength, balance, suppleness and correct movement.
