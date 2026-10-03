@@ -231,6 +231,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'pages/favicon.ico': '/favicon.ico' });
   eleventyConfig.addPassthroughCopy({ 'pages/site.webmanifest': '/site.webmanifest' });
   eleventyConfig.addPassthroughCopy({ 'pages/static/favicon': '/static/favicon' });
+  eleventyConfig.addPassthroughCopy('./functions/');
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
