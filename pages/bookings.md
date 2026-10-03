@@ -68,6 +68,8 @@ prices:
 
 Booking, prices, and cancellations policy detailed below.
 
+***Note:** A travel surplus will be added at distances over 15 miles from B14.*
+
 ## Prices
 
 {% ContentGrid classes.contentGrid %}
