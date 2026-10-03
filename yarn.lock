@@ -613,6 +613,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stablelib/base64@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "@stablelib/base64@npm:1.0.1"
+  checksum: 10/93f3edb05d5a828a775d23ebde49884abeb456b8946942acbe6a0815630e769c59c06c7275983031c8707bdcefc1c62917aaa99522ff1ec5f457704c83b686da
+  languageName: node
+  linkType: hard
+
 "a-sync-waterfall@npm:^1.0.0":
   version: 1.0.1
   resolution: "a-sync-waterfall@npm:1.0.1"
@@ -1371,6 +1378,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-sha256@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "fast-sha256@npm:1.3.0"
+  checksum: 10/3bef0491f10a254348ec11dcddb26e4d951cfd3b4c0662ea5843ad1be3fe184ed74d640df68565fcc60f6437548cddf49e3ac886f88a69e05b5142e862840bf9
+  languageName: node
+  linkType: hard
+
 "fastq@npm:^1.6.0":
   version: 1.17.1
   resolution: "fastq@npm:1.17.1"
@@ -1735,10 +1749,12 @@ __metadata:
     dotenv: "npm:^16.4.5"
     markdown-it: "npm:^14.1.0"
     markdown-it-attrs: "npm:^4.1.6"
+    markdown-it-for-inline: "npm:^2.0.1"
     postcss: "npm:^8.4.38"
     postcss-cli: "npm:^11.0.0"
     postcss-discard-comments: "npm:^7.0.1"
     posthtml: "npm:^0.16.7"
+    resend: "npm:^6.32.0"
     rimraf: "npm:^6.0.1"
     sass: "npm:^1.80.6"
     sass-autoprefixer: "npm:^1.0.1"
@@ -2025,6 +2041,13 @@ __metadata:
   peerDependencies:
     markdown-it: ">= 9.0.0"
   checksum: 10/a2b2322ee6687d7ce7bdc0d3428b31a24bef23b73f7f84088b65dced4aa363bc624f79cb2730d815e29fc90b2d20e2c8ccd5c622fbe5fac9ecc598889ca82bd7
+  languageName: node
+  linkType: hard
+
+"markdown-it-for-inline@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "markdown-it-for-inline@npm:2.0.1"
+  checksum: 10/07ddeb71169909c70363934fa46c6c6b6c20300fc8218a2e3955e16d7a4eab6fdaf471e381c2d4cdde0b8d51e905d56574824b43f96e66b8acd9771d7bbdcada
   languageName: node
   linkType: hard
 
@@ -2483,6 +2506,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postal-mime@npm:2.7.6":
+  version: 2.7.6
+  resolution: "postal-mime@npm:2.7.6"
+  checksum: 10/192001ce0b6256c15e67840651a9a032ccfecf4071800e03d9f3517e4b4e5a1cc9cdacdbc6711c5e4ed184f4791061e5232b3a1f6c278b3e97b889d6a24a9686
+  languageName: node
+  linkType: hard
+
 "postcss-cli@npm:^11.0.0":
   version: 11.0.0
   resolution: "postcss-cli@npm:11.0.0"
@@ -2715,6 +2745,21 @@ __metadata:
   version: 2.1.1
   resolution: "require-directory@npm:2.1.1"
   checksum: 10/a72468e2589270d91f06c7d36ec97a88db53ae5d6fe3787fadc943f0b0276b10347f89b363b2a82285f650bdcc135ad4a257c61bdd4d00d6df1fa24875b0ddaf
+  languageName: node
+  linkType: hard
+
+"resend@npm:^6.32.0":
+  version: 6.32.0
+  resolution: "resend@npm:6.32.0"
+  dependencies:
+    postal-mime: "npm:2.7.6"
+    standardwebhooks: "npm:1.1.1"
+  peerDependencies:
+    "@react-email/render": "*"
+  peerDependenciesMeta:
+    "@react-email/render":
+      optional: true
+  checksum: 10/4e95754e1344159d961e312495f584ee2642fe94c3290d28a1ea17f9a5c362ba7ee599930929909b075e9c3a88b184abd80ddfdc5d3b0f8bea220ef3a0dca804
   languageName: node
   linkType: hard
 
@@ -3018,6 +3063,16 @@ __metadata:
   dependencies:
     minipass: "npm:^7.0.3"
   checksum: 10/e2fb25d3b010586ed50a89a94dbe04a15ac3b7c60492031c8c6b22e5880dbc80ef9f8b1f7df928be7a8fbe198acef57811f0fb647394f698a4b870f43ac9fb5c
+  languageName: node
+  linkType: hard
+
+"standardwebhooks@npm:1.1.1":
+  version: 1.1.1
+  resolution: "standardwebhooks@npm:1.1.1"
+  dependencies:
+    "@stablelib/base64": "npm:^1.0.0"
+    fast-sha256: "npm:^1.3.0"
+  checksum: 10/50d1f5b923eacfc7a78ad45c3364f3879d47a6f2231c96c7d8efec8153f5405f847ee3d7b990fa22c1c0ed208beadba8777688c34b5c9a88b4004bb81a512400
   languageName: node
   linkType: hard
 

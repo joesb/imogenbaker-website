@@ -11,6 +11,7 @@ import Image from "@11ty/eleventy-img";
 import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import path from 'path';
+import mdIterator from 'markdown-it-for-inline';
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -234,6 +235,13 @@ export default async function(eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true
+  }).use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
+    const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
+    
+    if (href && (!href.startsWith('/') && !href.startsWith('#'))) {
+      tokens[idx].attrPush([ 'target', '_blank' ])
+      tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ])
+    }
   }).use(markdownItAttrs);
   eleventyConfig.setLibrary("md", markdownLibrary);
 
