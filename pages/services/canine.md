@@ -1,9 +1,9 @@
 ---
 layout: index.njk
 title: Canine Physiotherapy
-description: Optimum health for working dogs or the family friend, for rehabilitation after surgery or injury, or to ensure performance and quality of life in general health maintenance sessions.
+description: Imogen's goal is for every dog, whether a hard-working athlete or a family pet, to move better and feel better, from rehabilitation through to lifelong wellbeing.
 jumbotron: |
-  Optimum health for working dogs or the family friend, for rehabilitation after surgery or injury, or to ensure performance and quality of life in general health maintenance sessions.
+  Imogen's goal is for every dog, whether a hard-working athlete or a family pet, to move better and feel better, from rehabilitation through to lifelong wellbeing.
 eleventyNavigation:
   key: Canine
   title: Canine Physiotherapy
@@ -19,11 +19,11 @@ For dogs recovering from an injury or surgery, physiotherapy provides structured
 
 Physiotherapy can also be particularly beneficial for older dogs, helping to maintain mobility, manage stiffness and support comfort, allowing them to stay active and enjoy a good quality of life for longer.
 
-{% ImageTextBlock "/static/images/ijb-physio-canine.jpg", "Imogen Baker treating a dog as a canine physiotherapist" %}
+{% ImageTextBlock "/static/images/ijb-physio-canine-00.jpg", "Imogen Baker treating a dog as a canine physiotherapist" %}
 
 ## What conditions can physiotherapy help with?
 
-Physiotherapy can be beneficial for a wide range of musculoskeletal and neurological conditions, including:
+Physiotherapy is beneficial for many musculoskeletal and neurological conditions:
 
 - Hip dysplasia
 - Elbow dysplasia
@@ -38,7 +38,7 @@ Physiotherapy can be beneficial for a wide range of musculoskeletal and neurolog
 - Cruciate disease
 - Tendon injuries
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=canine-physio){.button .padding-inline}
 {.centered}
 
 {% endImageTextBlock %}
@@ -51,7 +51,7 @@ Each physiotherapy session begins with a thorough assessment of your dog. This i
 
 The findings from this assessment are then used to develop a clinically reasoned and individually tailored treatment plan. This ensures that your dog receives the most appropriate care for their current condition, needs and stage of rehabilitation.
 
-{% ImageTextBlock "/static/images/originals/pexels-cottonbro-6568498.jpg" "Close-up of a German Shepherd being massaged" %}
+{% ImageTextBlock "/static/images/ijb-physio-canine-02.jpg" "Imogen Baker treating a dog as a canine physiotherapist" %}
 **Depending on your dog’s individual needs, treatment may include:**
 
 - Massage
@@ -63,7 +63,7 @@ The findings from this assessment are then used to develop a clinically reasoned
 - Therapeutic exercise
 - Balance and proprioceptive exercises
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=canine-physio){.button .padding-inline}
 {.centered}
 
 {% endImageTextBlock %}
@@ -77,3 +77,6 @@ Exercise prescription is a key part of successful rehabilitation. At the end of 
 Each exercise will be demonstrated to you during the session, giving you the opportunity to ask questions and make sure you feel confident carrying them out correctly at home.
 
 Your dog’s exercise programme will be reviewed and adapted as they progress, ensuring their rehabilitation continues to be appropriate and effective at every stage.
+
+[Contact](/contact/?type=canine-physio){.button .padding-inline}
+{.centered}

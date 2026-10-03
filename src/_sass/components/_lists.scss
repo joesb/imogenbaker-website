@@ -46,6 +46,10 @@ ol {
       }
     }
   }
+
+  li {
+    margin-block: var(--size-1);
+  }
 }
 
 .inline-list {

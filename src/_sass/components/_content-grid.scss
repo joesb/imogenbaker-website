@@ -92,3 +92,10 @@
   padding-block: var(--size-4);
   padding-inline: var(--size-5);
 }
+
+/** Prices grid **/
+
+.prices-grid-item {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

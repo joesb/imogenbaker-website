@@ -1,9 +1,9 @@
 ---
 layout: index.njk
 title: Equine Physiotherapy
-description: From top competition horses to happy hackers, I ensure your horse is treated to the highest standard, whether for general health maintenance or rehabilitation.
+description: Whether recovering from injury or maintaining good health, every horse receives treatment tailored to their needs, from elite competitors to family companions.
 jumbotron: |
-  **From top competition horses to happy hackers, I ensure your horse is treated to the highest standard, whether for general health maintenance or rehabilitation.**
+  **Whether recovering from injury or maintaining good health, every horse receives treatment tailored to their needs, from elite competitors to family companions.**
   
   Offering a range of techniques and electrotherapies to support injury rehabilitation or sports performance.
 eleventyNavigation:
@@ -19,7 +19,7 @@ Physiotherapy can be an important part of your horse’s routine health and perf
 
 Physiotherapy also plays an important role in rehabilitation following injury or surgery. Imogen will work with you to develop an evidence-based, individualised treatment plan tailored to your horse’s specific needs, helping to support their recovery and return to work.
 
-{% ImageTextBlock "/static/images/ijb-physio-equine.jpg", "Imogen Baker treating a brown-and-white skewbald horse as an equine physiotherapist" %}
+{% ImageTextBlock "/static/images/ijb-physio-equine-00.jpg", "Imogen Baker treating a brown-and-white skewbald horse as an equine physiotherapist" %}
 
 ## What conditions can we treat?
 
@@ -37,7 +37,7 @@ Equine physiotherapy can be beneficial for horses experiencing a wide range of m
 - Sidebone and ringbone
 - Navicular syndrome
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-physio){.button .padding-inline}
 {.centered}
 
 {% endImageTextBlock %}
@@ -50,7 +50,7 @@ Every physiotherapy session begins with a thorough assessment of your horse. Thi
 
 These findings are used alongside clinical reasoning to develop an appropriate and individualised treatment plan for your horse.
 
-{% ImageTextBlock "/static/images/originals/scott-ymker-6s3NsdzRec0-unsplash.jpg", "Brown and white horse on brown field during daytime" %}
+{% ImageTextBlock "/static/images/ijb-physio-equine-01.jpg", "Imogen Baker treating a palomino horse as an equine physiotherapist" %}
 
 **Depending on your horse’s needs, treatment may include:**
 
@@ -61,7 +61,7 @@ These findings are used alongside clinical reasoning to develop an appropriate a
 - Heat therapy
 - Electrotherapies, including LASER and TENS
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-physio){.button .padding-inline}
 {.centered}
 
 {% endImageTextBlock %}
@@ -78,5 +78,5 @@ Alongside a standard physiotherapy session, Imogen also offers ridden assessment
 
 A ridden assessment can be particularly useful when investigating issues that are only apparent when your horse is under saddle. Observing your horse during ridden work can provide additional information to support the assessment and help inform their ongoing treatment and rehabilitation plan.
 
-[Contact](/contact/){.button .padding-inline}
+[Contact](/contact/?type=equine-physio){.button .padding-inline}
 {.centered}

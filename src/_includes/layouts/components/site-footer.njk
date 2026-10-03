@@ -1,25 +1,33 @@
 <footer class="footer-main">
 	<div class="footer-main__container container">
-		<nav aria-label="Find out more" class="footer-main__nav footer-main__left">
-			{# <ul>
-				{%- for footer in collections.footerNav -%}
-				<li>
-					<a href="{{ footer.url | url }}"{% if footer.url == page.url %} data-current="current item" class="current"{% endif %}>{{ footer.data.navtitle }}</a>
-				</li>
-				{%- endfor -%}
-			</ul> #}
-			{% set navPages = collections.all | eleventyNavigation %}
-			<ul class="footer-main__nav__list">
-			{% set cls = cycler("odd", "even") %}
-			{%- for entry in navPages %}
-			{% if entry.url != "/" %}
-				<li {% activepath entry.url, page.url %} class="{{ cls.next() }}">
-					<a href="{{ entry.url }}">{{ entry.title }}</a>
-				</li>
-			{% endif %}
-			{%- endfor %}
-			</ul>
-		</nav>
+		<div class="footer-main__left">
+			<nav aria-label="Find out more" class="footer-main__nav">
+				{# <ul>
+					{%- for footer in collections.footerNav -%}
+					<li>
+						<a href="{{ footer.url | url }}"{% if footer.url == page.url %} data-current="current item" class="current"{% endif %}>{{ footer.data.navtitle }}</a>
+					</li>
+					{%- endfor -%}
+				</ul> #}
+				{% set navPages = collections.all | eleventyNavigation %}
+				<ul class="footer-main__nav__list">
+				{% set cls = cycler("odd", "even") %}
+				{%- for entry in navPages %}
+				{% if entry.url != "/" %}
+					<li {% activepath entry.url, page.url %} class="{{ cls.next() }}">
+						<a href="{{ entry.url }}">{{ entry.title }}</a>
+					</li>
+				{% endif %}
+				{%- endfor %}
+				</ul>
+			</nav>
+			<div class="footer-main--logos">
+				<h2 class="h4-style">Registered and regulated by:</h2>
+				<div class="content-grid content-grid-columns-2">
+				{% Markdown true %}[![The Institute of Registered Veterinary & Animal Physiotherapists (IRVAP) logo](/static/images/irvap-logo.png)](https://www.irvap.org.uk/){% endMarkdown %}
+				</div>
+			</div>
+		</div>
 		<div class="footer-main__container__contact-me footer-main__right">
 			<h3 class="h4-style">Follow me on:</h3>
 			<dl class="footer-main__container__contact-me__list">

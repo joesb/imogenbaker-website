@@ -11,6 +11,7 @@ import Image from "@11ty/eleventy-img";
 import { eleventyImageOnRequestDuringServePlugin } from "@11ty/eleventy-img";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import path from 'path';
+import mdIterator from 'markdown-it-for-inline';
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
@@ -56,7 +57,7 @@ export default async function(eleventyConfig) {
 
   // Minify CSS
   eleventyConfig.addFilter('cssmin', function (code) {
-    css = new CleanCSS({}).minify(code).styles;
+    let css = new CleanCSS({}).minify(code).styles;
     return postCSS([ autoprefixer, postCSSDC({removeAll: true}) ]).process(css).css;
   });
 
@@ -227,13 +228,22 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('static/');
   eleventyConfig.addWatchTarget('./src/_sass/');
   eleventyConfig.addPassthroughCopy('robots.txt');
-  eleventyConfig.addPassthroughCopy('CNAME');
+  eleventyConfig.addPassthroughCopy({ 'pages/favicon.ico': '/favicon.ico' });
+  eleventyConfig.addPassthroughCopy({ 'pages/site.webmanifest': '/site.webmanifest' });
+  eleventyConfig.addPassthroughCopy({ 'pages/static/favicon': '/static/favicon' });
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
     html: true,
     breaks: true,
     linkify: true
+  }).use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
+    const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href')
+    
+    if (href && (!href.startsWith('/') && !href.startsWith('#'))) {
+      tokens[idx].attrPush([ 'target', '_blank' ])
+      tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ])
+    }
   }).use(markdownItAttrs);
   eleventyConfig.setLibrary("md", markdownLibrary);
 

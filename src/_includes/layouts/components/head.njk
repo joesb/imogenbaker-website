@@ -9,11 +9,6 @@
   {% set siteName = [ meta.title, meta.subtitle] %}
   <title>{% if not siteHome %}{{ pageTitle or title or siteName | join(" ") }} | {% endif %}{{ siteName | join(" ") }}</title>
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/apple-touch-icon.png" type="image/png">
-  <link rel="icon" href="/static/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
-  <link rel="icon" href="/static/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
-
   {% if metadesc %}
   <meta name="description" content="{{ metadesc }}" />
   {% endif %}
@@ -23,6 +18,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
+  {# Favicons #}
+  {% include "layouts/components/head-favicon.njk" %}
+
   {% set css %}
     {% include "assets/css/styles.css" %}
   {% endset %}

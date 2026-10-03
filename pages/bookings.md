@@ -15,7 +15,7 @@ classes:
       - margin-block
 prices:
   - 
-    type: equine
+    type: equine-physio
     title: Equine Physio
     items:
       - 
@@ -31,7 +31,7 @@ prices:
         label: Book a physiotherapy appointment and one-hour riding lesson together
         price: £95  
   - 
-    type: canine
+    type: canine-physio
     title: Canine Physio
     items:
       -
@@ -44,7 +44,7 @@ prices:
         label: Please enquire for bundle prices (groups of 3 or more)
         price:
   - 
-    type: other
+    type: other-physio
     title: Other Animals Physio
     items:
       - 
@@ -54,7 +54,7 @@ prices:
         label: Other animal follow up appointment
         price: £50
   - 
-    type: coaching
+    type: equine-coaching
     title: Coaching
     items:
       -
@@ -68,18 +68,22 @@ prices:
 
 Booking, prices, and cancellations policy detailed below.
 
+***Note:** A travel surplus will be added at distances over 15 miles from B14.*
+
 ## Prices
 
 {% ContentGrid classes.contentGrid %}
   {% for item in prices %}
-<div class="content-grid-item content-grid-item--card">
+<div class="content-grid-item content-grid-item--card prices-grid-item">
   {% Markdown %}
 ### {{ item.title }}{.centered .margin-block-end}
 
-  <dl>{% for price in item.items %}
-    <dt>{{ price.label }}</dt>
-    <dd>{{ price.price }}</dd>{% endfor %}
-  </dl>
+  <div class="price-list">
+    <dl>{% for price in item.items %}
+      <dt>{{ price.label }}</dt>
+      <dd>{{ price.price }}</dd>{% endfor %}
+    </dl>
+  </div>
 
 [Enquire](/contact/?type={{ item.type }}){.button}
 {.centered}
