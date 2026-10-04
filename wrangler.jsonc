@@ -1,6 +1,6 @@
 {
   "name": "imogenbaker-website",
-  "main": "functions/api/submit.js",
+  "main": "worker/index.js",
   "compatibility_date": "2026-10-03",
   "observability": {
     "enabled": true,
@@ -13,7 +13,7 @@
       "persist": true
     },
     "traces": {
-      "enabled": true,
+      "enabled": false,
       "head_sampling_rate": 1,
       "persist": true
     },
@@ -25,6 +25,6 @@
     "directory": "./_site",
     "not_found_handling": "404-page",
     "binding": "ASSETS",
-    "run_worker_first": false
+    "run_worker_first": ["/api/*"]
   }
 }
