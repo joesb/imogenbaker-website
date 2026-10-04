@@ -53,7 +53,7 @@ ${output.message}`;
       return Response.redirect("https://imogenbaker.co.uk/contact-confirmation/", 303)
     }
   } catch (err) {
-    console.log({data, err});
+    console.log({error: err});
     return Response.redirect("https://imogenbaker.co.uk/404/?error=json_parsing", 303)
   }
 }
